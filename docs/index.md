@@ -1,3 +1,5 @@
+[![Documentation Status](https://readthedocs.org/projects/dropdog/badge)](http://dropdog.readthedocs.org/en/latest/?badge)
+
 # Development documentation
 --------------------------------
 
