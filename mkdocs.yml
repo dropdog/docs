@@ -1,0 +1,9 @@
+pages:
+- Home: 'index.md'
+- General: 'general.md',
+- Learn: 'learn.md',
+- Development: 'development',
+- Theming: 'theming',
+- Scripts: 'scripts',
+- Terminology: 'terminology'
+
