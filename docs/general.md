@@ -1,5 +1,3 @@
-## Official url: [dropdog.github.io/website](http://dropdog.github.io/website/)
-
 ## About this project
 
 ## Purpose and potentional users
