@@ -6,10 +6,10 @@
 Documentation for Drupal Developers/Themers etc. 
 Raed the docs online at [dropdog.readthedocs.org](http://dropdog.readthedocs.org/)
 
-1. [General](docs/general)
-2. [Learn](docs/learn)
-3. [Development](docs/development)
-4. [Theming](docs/theming)
-5. [Scripts](docs/scripts)
-6. [Terminology](docs/terminology)
+1. [General](general)
+2. [Learn](learn)
+3. [Development](development)
+4. [Theming](theming)
+5. [Scripts](scripts)
+6. [Terminology](terminology)
 
