@@ -1,8 +1,8 @@
 pages:
-- Home: 'index.md',
-- General: 'general.md',
-- Learn: 'learn.md',
-- Development: 'development.md',
-- Theming: 'theming.md',
-- Scripts: 'scripts.md',
+- Home: 'index.md'
+- General: 'general.md'
+- Learn: 'learn.md'
+- Development: 'development.md'
+- Theming: 'theming.md'
+- Scripts: 'scripts.md'
 - Terminology: 'terminology.md'
