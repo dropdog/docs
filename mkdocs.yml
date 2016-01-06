@@ -1,3 +1,5 @@
+site_name: DropDog - Drupal 8.x distribution
+
 pages:
 - Home: 'index.md'
 - General: 'general.md'
