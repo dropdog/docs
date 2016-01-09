@@ -6,12 +6,12 @@ markdown_extensions:
     - sane_lists
 
 pages:
-- Home: 'index'
-- General: 'general'
-- Learn: 'learn'
-- Parameters: 'parameters'
-- Infrastructure: 'infrastructure'
-- Development: 'development'
-- Theming: 'theming'
-- Scripts: 'scripts'
-- Terminology: 'terminology'
+- Home: 'index.md'
+- General: 'general.md'
+- Learn: 'learn.md'
+- Parameters: 'parameters.md'
+- Infrastructure: 'infrastructure.md'
+- Development: 'development.md'
+- Theming: 'theming.md'
+- Scripts: 'scripts.md'
+- Terminology: 'terminology.md'
