@@ -1,5 +1,13 @@
 site_name: DropDog - Drupal 8.x distribution
 
+theme: Flatly
+
+markdown_extensions:
+    - smarty
+    - toc:
+        permalink: True
+    - sane_lists
+
 pages:
 - Home: 'index'
 - General: 'general'
