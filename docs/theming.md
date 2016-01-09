@@ -152,6 +152,8 @@ Eg split the twig files to templates/system, templates/block etc using the patte
 
 ### Theme folders and file structure
 
+Structure generated with command ```tree -F -a --dirsfirst```.
+
 ```
 ├── config/
 │   └── install/

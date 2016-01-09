@@ -33,6 +33,4 @@
 
 ### Generate dummy content
 
-### Autocreate Tests for new Entities/Views/Blocks (eg with console())
-
-
+### Autocreate Tests for new Entities/Views/Blocks (eg with Console)

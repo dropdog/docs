@@ -23,7 +23,7 @@ Please read all the file and not individual sections. It was written like this f
 - Branches
 - Merging
 - Pulling
-- Commiting
+- Committing
 - Patches
 
 ### Installing the distribution
@@ -58,7 +58,7 @@ Please read all the file and not individual sections. It was written like this f
 - Content types, Views and Custom Blocks should follow this pattern for the machine name: ```[machinename]```. That means you should use only letters and no special character or space. Machine names must be short but descriptive. Avoid very generic machine names or names that have been used already on the site even for another type of functionality (Views, Content types, Blocks, Plugins etc).
 
 ### Building (Drupal) Views
-
+- Create one Views per
 
 ### Building Custom configuration (admin) pages
 - If you group form items use the parent variable name as prefix for all the children items.
