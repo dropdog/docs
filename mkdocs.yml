@@ -1,7 +1,4 @@
 site_name: DropDog - Drupal 8.x distribution
-
-theme: Flatly
-
 markdown_extensions:
     - smarty
     - toc:
