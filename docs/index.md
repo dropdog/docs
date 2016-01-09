@@ -1,4 +1,4 @@
-[![Documentation Status](https://readthedocs.org/projects/dropdog/badge)](http://dropdog.readthedocs.org/en/latest/?badge)
+[![Documentation Status](https://readthedocs.org/projects/dropdog/badge)](http://dropdog.readthedocs.org/en/master/?badge)
 
 Documentation for Drupal Developers/Themers etc for the **DropDog Drupal 8.x** distribution.
 
