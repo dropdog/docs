@@ -62,7 +62,7 @@ Please read all the file and not individual sections. It was written like this f
 
 ### Building Custom configuration (admin) pages
 - If you group form items use the parent variable name as prefix for all the children items.
-```
+```php
 // Parent (Group)
 $form['parent_group'] = array();
 // Child
