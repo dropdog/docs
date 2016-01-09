@@ -28,24 +28,24 @@ Is the functionality working well for the Media browser?
 - **System Infrastructure**
 Is the functionality working well with current [Infrastructure](infrastructure)? Do we need to add/remove packages or change settings?
 
-Functionality | Multilingual   | Multisite    | Subdomain/Lang.   | One Database    | Drupal 8.x     | Shared Media    | Infrastructure   |
---------------| ---------------| -------------| ------------------| ----------------| ---------------| ----------------| -----------------|
+|Functionality | Multilingual   | Multisite    | Subdomain/Lang.   | One Database    | Drupal 8.x     | Shared Media    | Infrastructure   |
+|--------------| ---------------| -------------| ------------------| ----------------| ---------------| ----------------| -----------------|
+|Content Types        | - | - | - | - | - | - | - |
+|Content workflow     | - | - | - | - | - | - | - |
+|User Roles           | - | - | - | - | - | - | - |
+|Backend design       | - | - | - | - | - | - | - |
+|Frontend design      | - | - | - | - | - | - | - |
+|Search               | - | - | - | - | - | - | - |
+|Domain access        | - | - | - | - | - | - | - |
+|Content translations | - | - | - | - | - | - | - |
+|Content reports      | - | - | - | - | - | - | - |
+|Settings pages       | - | - | - | - | - | - | - |
+|SEO & metatags       | - | - | - | - | - | - | - |
+|Email system         | - | - | - | - | - | - | - |
+|Drupal messages      | - | - | - | - | - | - | - |
+|Cron settings        | - | - | - | - | - | - | - |
+|Drupal logs          | - | - | - | - | - | - | - |
+|(Google) Analytics   | - | - | - | - | - | - | - |
+|WYSIWYG              | - | - | - | - | - | - | - |
+|Spam protection      | - | - | - | - | - | - | - |
 
-Content Types        | - | - | - | - | - | - | - |
-Content workflow     | - | - | - | - | - | - | - |
-User Roles           | - | - | - | - | - | - | - |
-Backend design       | - | - | - | - | - | - | - |
-Frontend design      | - | - | - | - | - | - | - |
-Search               | - | - | - | - | - | - | - |
-Domain access        | - | - | - | - | - | - | - |
-Content translations | - | - | - | - | - | - | - |
-Content reports      | - | - | - | - | - | - | - |
-Settings pages       | - | - | - | - | - | - | - |
-SEO & metatags       | - | - | - | - | - | - | - |
-Email system         | - | - | - | - | - | - | - |
-Drupal messages      | - | - | - | - | - | - | - |
-Cron settings        | - | - | - | - | - | - | - |
-Drupal logs          | - | - | - | - | - | - | - |
-(Google) Analytics   | - | - | - | - | - | - | - |
-WYSIWYG              | - | - | - | - | - | - | - |
-Spam protection      | - | - | - | - | - | - | - |
