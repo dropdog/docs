@@ -1,8 +1,8 @@
 ## About this project
 
-## Purpose and potentional users
+## Purpose and potential users
 
-## Repos and resources
+## Repositories and resources
 
 - Drupal project: TBD
 - Github repo: [github.com/dropdog/dropdog](https://github.com/dropdog/dropdog)

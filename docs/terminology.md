@@ -1,9 +1,9 @@
-## Terminology
------------------
+## Terminology and Abbreviations
+----------------------------------
 
-- Drupal core (core)
-- Distribution (distro)
-- Install profile (profile)
+- Core (Drupal core)
+- Distribution (Distro)
+- Install profile (Profile)
 - Developers
 - Themers
 - Configuration
@@ -15,7 +15,19 @@
 - Form display
 - Field
 - System setting
-- vcs (Version Control System)
+- VCS (Version Control System)
 - Unit testing
 - Drupal console (Console)
-
+- Template
+- Module
+- Theme
+- Section
+- CRUD
+- User
+- Anonymous (User)
+- WYSIWYG (Editor)
+- [token_placeholder]
+- D.O. (Drupal.org)
+- TBD (To Be Done)
+- DRY (Don't Repeat Yourself)
+- DRTW (Don't Reinvent The Wheel)

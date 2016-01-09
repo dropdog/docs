@@ -3,17 +3,17 @@
 
 ### Using Drush 8.x
 
-### Using composer
+### Using Composer
 
-### Using Drupal console
+### Using Drupal Console
 
 ### Building with Features
 
 ### Create a multilingual install with Dummy content and inspect the database
 
-Use this distro: [drupal.org/project/multilingual_demo](https://www.drupal.org/project/multilingual_demo)
+- Use this distro: [drupal.org/project/multilingual_demo](https://www.drupal.org/project/multilingual_demo)
 
-### Play with git and vcs
+### Play with git and VCS
 
 ### Setup a development environment
 
@@ -27,5 +27,6 @@ Use this distro: [drupal.org/project/multilingual_demo](https://www.drupal.org/p
 
 ### Get familiar with the new API (+API docs)
 
-### Other (Vagrant, Docker, CI)...
+### Useful browser extensions and plugins
 
+### Other (Vagrant/Otto, Docker, Continuous Integration)...
