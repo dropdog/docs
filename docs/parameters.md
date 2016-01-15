@@ -11,13 +11,9 @@ The main parameters of the project:
 
 Is the functionality working well with multiple languages?
 
-### Multisite
+### Multidomain
 
-Is the functionality working well with a multisite installation that shares code and database?
-
-### One Subdomain per language
-
-Is the functionality working well for each Subdomain?
+Is the functionality working well with a multidomain installation with the same code and database?
 
 ### One (only) Database
 
@@ -35,24 +31,23 @@ Is the functionality working well for the Media browser?
 
 Is the functionality working well with current [Infrastructure](infrastructure)? Do we need to add/remove packages or change settings?
 
-|Functionality | Multilingual   | Multisite    | Subdomain/Lang.   | One Database    | Drupal 8.x     | Shared Media    | Infrastructure   |
-|--------------| ---------------| -------------| ------------------| ----------------| ---------------| ----------------| -----------------|
-|Content Types        | - | - | - | - | - | - | - |
-|Content workflow     | - | - | - | - | - | - | - |
-|User Roles           | - | - | - | - | - | - | - |
-|Backend design       | - | - | - | - | - | - | - |
-|Frontend design      | - | - | - | - | - | - | - |
-|Search               | - | - | - | - | - | - | - |
-|Domain access        | - | - | - | - | - | - | - |
-|Content translations | - | - | - | - | - | - | - |
-|Content reports      | - | - | - | - | - | - | - |
-|Settings pages       | - | - | - | - | - | - | - |
-|SEO & metatags       | - | - | - | - | - | - | - |
-|Email system         | - | - | - | - | - | - | - |
-|Drupal messages      | - | - | - | - | - | - | - |
-|Cron settings        | - | - | - | - | - | - | - |
-|Drupal logs          | - | - | - | - | - | - | - |
-|(Google) Analytics   | - | - | - | - | - | - | - |
-|WYSIWYG              | - | - | - | - | - | - | - |
-|Spam protection      | - | - | - | - | - | - | - |
-
+|Functionality | Multilingual   | Multidomain   | One Database    | Drupal 8.x     | Shared Media    | Infrastructure   |
+|--------------| ---------------| -------------| ------------------| ----------------| ---------------| ----------------|
+|Content Types        | - | - | - | - | - | - |
+|Content workflow     | - | - | - | - | - | - |
+|User Roles           | - | - | - | - | - | - |
+|Backend design       | - | - | - | - | - | - |
+|Frontend design      | - | - | - | - | - | - |
+|Search               | - | - | - | - | - | - |
+|Domain access        | - | - | - | - | - | - |
+|Content translations | - | - | - | - | - | - |
+|Content reports      | - | - | - | - | - | - |
+|Settings pages       | - | - | - | - | - | - |
+|SEO & metatags       | - | - | - | - | - | - |
+|Email system         | - | - | - | - | - | - |
+|Drupal messages      | - | - | - | - | - | - |
+|Cron settings        | - | - | - | - | - | - |
+|Drupal logs          | - | - | - | - | - | - |
+|(Google) Analytics   | - | - | - | - | - | - |
+|WYSIWYG              | - | - | - | - | - | - |
+|Spam protection      | - | - | - | - | - | - |
