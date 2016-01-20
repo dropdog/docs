@@ -51,3 +51,5 @@ Is the functionality working well with current [Infrastructure](infrastructure)?
 |(Google) Analytics   | - | - | - | - | - | - |
 |WYSIWYG              | - | - | - | - | - | - |
 |Spam protection      | - | - | - | - | - | - |
+|Content position/settings     | - | - | - | - | - | - |
+|Caching     | - | - | - | - | - | - |

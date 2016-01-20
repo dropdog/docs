@@ -266,10 +266,12 @@ $sidebar-bg: #ddd
 
 ### Graphics and imaginery best practices
 
+- Use the ```<picture>``` element by default (see the [specification](http://picture.responsiveimages.org/)). Drupal 8.x has a core support for this using the [http://scottjehl.github.io/picturefill/](http://scottjehl.github.io/picturefill/) polyfill and the [responsive_image](https://github.com/drupal/drupal/tree/8.0.x/core/modules/responsive_image) module.
+
 ### Fonts and typography
 - Try using open source fonts (eg [Google Fonts](https://www.google.com/fonts)).
 - If you have the copyright to download the fonts locally do this instead of loading them from the online source.
-- Be careful so the selected fonts (and their fallback) to support all the languages.
+- Be careful so the selected fonts (and their fallback) do support all the languages.
 
 ### External CSS and JS libraries
 Please check [development/Adding 3rd party libraries](development#adding-3rd-party-libraries)
@@ -280,5 +282,16 @@ Check [D.O. related documentation](https://www.drupal.org/node/1906392).
 ### Performance and page loading
 TBD
 
+- What are our performance targets
+- Cache tags
+- Views caching
+- CDN
+- Measure performance (tools)
+
 ### Accessibility best practices
 TBD
+- Accessibility standard we support (link)
+- Basic rules to follow
+- Images
+- Forms
+- How to fix accessibility issues (within Drupal)
