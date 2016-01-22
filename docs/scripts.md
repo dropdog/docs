@@ -1,6 +1,8 @@
 ## Custom development scripts
 ------------------------------
 
+### Create a dev project folder from Drupal.org core and Github distro.
+
 ### Build the Distribution from Profile on Github
 
 ### Rebuild the Distribution from Profile on Github

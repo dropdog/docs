@@ -143,6 +143,18 @@ For example, all Content type forms (```node/add/*```) should have the same desi
 Eg split the twig files to templates/system, templates/block etc using the pattern templates/[module] if there are 3 files of the system and 2 files of the block module. There should not exist any empty folder.
 - If you need to extend/alter a class or another attribute prefer to use the [theme_name].theme
 - Do not use non semantic classes. Saying that we should not use classes such as "clearfix, container, full-width" etc if these classes are used to provide some css styling. Instead use [sass mixins](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#mixins) such as ```@full-width {width: 100%}```.
+- Avoid theming with elements except from the basic ones (p, h1 etc). Use classes instead. Example for this code ```<div><span class="my"></span></div>```:
+```css
+  // Good
+  .my {}
+  // Good also
+  span.my {}
+
+  // Bad
+  div span {}
+  // Bad also
+  div .my {}
+```
 
 ### Styleguides
 
