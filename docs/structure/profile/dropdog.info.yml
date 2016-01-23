@@ -1,0 +1,35 @@
+name: Dropdog
+type: profile
+description: 'Dropdog is a drupal dog!'
+version: 1.0
+core: 8.x
+
+dependencies:
+  - node
+  - block
+  - ckeditor
+  - config
+  - contextual
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - dblog
+  - toolbar
+  - field_ui
+  - file
+  - views
+  - views_ui
+  - automated_cron
+themes:
+  - seven
+  - dropdogy
+

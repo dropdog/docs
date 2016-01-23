@@ -14,4 +14,6 @@ pages:
 - Development: 'development.md'
 - Theming: 'theming.md'
 - Scripts: 'scripts.md'
+- Examples: 'examples.md'
+- Development thoughts: 'thoughts.md'
 - Terminology: 'terminology.md'

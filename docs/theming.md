@@ -164,7 +164,7 @@ Eg split the twig files to templates/system, templates/block etc using the patte
 
 ### Theme folders and file structure
 
-Structure generated with command ```tree -F -a --dirsfirst```.
+Structure generated with command ```tree -F -a --dirsfirst```. See the structure at [github.com/dropdog/docs/tree/master/docs/structure/theme](https://github.com/dropdog/docs/tree/master/docs/structure/theme))
 
 ```
 ├── config/

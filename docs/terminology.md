@@ -11,6 +11,7 @@
 - Roles
 - Entities
 - Content types
+- DFeature (Drupal Feature)
 - View mode (of Entities)
 - Form display
 - Field
@@ -31,3 +32,4 @@
 - TBD (To Be Done)
 - DRY (Don't Repeat Yourself)
 - DRTW (Don't Reinvent The Wheel)
+- VCS (Version Control System)

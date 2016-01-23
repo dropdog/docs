@@ -2,6 +2,8 @@
 ---------------------------------------
 Please read all the file and not individual sections. It was written like this for purpose.
 
+A lot of ideas for this page have been taken from the [KIT Feature Specification](http://cgit.drupalcode.org/kit/tree/kitf.txt?id=refs/heads;id2=master).
+
 ### How to work
 - Assign a task to your own or pick an existing one.
 - Deliver new Feature/Functionality *fast*
@@ -17,7 +19,8 @@ Please read all the file and not individual sections. It was written like this f
 
 ### Project folders and structure
 - We are only tracking the ```/profiles/[distro-name]``` folder! Not any other files.
-- The distribution folder will/may have this structure (see at [github.com/dropdog/play/tree/develop](https://github.com/dropdog/play/tree/develop))
+- The distribution folder will/may have this structure (see at [github.com/dropdog/docs/tree/master/docs/structure/profile](https://github.com/dropdog/docs/tree/master/docs/structure/profile))
+
 ```
 ├── config/
 │   ├── install/
@@ -53,13 +56,15 @@ Please read all the file and not individual sections. It was written like this f
 
 ```
 
-
 ### Reporting issues (error etc)
 There are many kind of issues. Most of the times here we refer to a bug or support issue. Not to a Task.
+
+Tasks are also issues but with a different label.
 
 - First search, then submit an issue.
 - Create the issue only on Github.
 - There must be only one unique issue and no duplicates.
+
 - On the issue you must include
   - steps to reproduce the issue
   - files that are related
@@ -68,6 +73,8 @@ There are many kind of issues. Most of the times here we refer to a bug or suppo
   - the team member or group to get notified
   - a screenshot (if needed)
   - the version of the software (eg Drupal core) you are using
+  - the error logs if any (Drupal's database_log or system_log)
+
 - Every issue must be as much as possible self hosted on Github. Images, assets, code etc should better live on the Github to avoid missing things etc later.
 - Add the related tags (**labels** and **milestones**)! If there is no a tag you are looking for ask to the Admin to create one.
 - Closing and reopening issues is not something to avoid. Open any issue if you have to do more job, if you need declaration, if you want to keep it on front etc.
@@ -77,36 +84,105 @@ There are many kind of issues. Most of the times here we refer to a bug or suppo
 - View your [Assigned](https://github.com/issues/assigned) issues.
 - View your [Mentioned](https://github.com/issues/mentioned) issues.
 
-### Using git and VCS patterns
-- We are using the [git-flow](http://nvie.com/posts/a-successful-git-branching-model/) methodology and its conventions.
+### Using git and VCS (Version Control System)
+We are using the default **[git-flow](http://nvie.com/posts/a-successful-git-branching-model/) methodology** and its conventions.
+
+See the [git-flow cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/) for fast learning.
+
+- The main project branches are ```develop, [releases], master```.
 - There is no staging branch. Staging will be each release tag.
 - Tests from the CI should run on every pull-request.
-- Tests on live servers should run on every Release.
-- Each release will have this pattern ```[drupal-version]-profile-release]```. Example **8.0.1-1.0**. Different releases may exist for the same profile version (Drupal version will change).
+- Tests on live servers should run on every [Release].
+- Each release will have this name pattern ```[drupal-version]-profile-release]```. Example **8.0.1-1.0**. Different releases may exist for the same profile version (so only the Drupal version will change).
 - Patches that are submitted from D.O. or other places should be commited with the files on git!
 - Only the Project manager should be able to merge.
 - We are starting development always from **develop** branch except if there is a **hotfix**.
-- When we create a pull-request it is better to commit on the same pull-request (using a local branch) and when ready merge it.
+- When we create a pull-request you have to commit on the same pull-request (using a local branch) and when ready merge it.
 - After each successful release there will be a new **make file** from existing files/configuration.
+- Modules that are used for development (devel, masquarade etc) will be commited to Github but **they will not be imported to the make file** except if they are requirements for any of the modules of the distribution.
+
+### Git commit best practices
+TBD
+
+### Applying patches
+
+See also [D.O. - Applying patches](https://www.drupal.org/patch/apply).
+
+- Get into the folder that will apply the patch
+- Download the patch fro D.O.
+- Apply the patch ```patch -p1 < [patch_file]```
+- Check if patch works (running tests and/or with the UI)
+- If patch works include it with the commit!
 
 ### Installing the distribution
 - Using **drush** only (make, site-install, db sync, file dl etc)
 - Using git only (we need a full site repo though)
 - Using UI software (is that needed?)
 
-
 ### Update the distribution
 - Normal method (remove old files, keep backup etc).
 - Avoid using composer, just get new code with drush or git.
 
+### Create a (D.O) Release
+
+See also [Developing installation profiles and distributions](https://www.drupal.org/developing/distributions).
+
+Steps to create a new release:
+
+- Prepare files for the new release
+- Generate [make](http://drushcommands.com/drush-8x/make/) file if not exist using ```drush make-generate``````
+- Update make file if exist using ```drush make-update```
+- Verify the make file using ```drush verify-makefile``` (this step requires the drush plugin [drupalorg_drush](https://www.drupal.org/project/drupalorg_drush))
+- Update CHANGELOG.txt
+- Update [profile].info.yml (you can see the list of modules using ```drush pm-list --type=module --status=enabled --format=list```)
+- Inform related services for the new release (eg CI webhooks)
+- (Optional) Update PATCHES.txt
+- Create a git tag for the release and push the new tag on the repository
+
 ### Setting up the (local) development environment
+Required software (to install and use Drupal). See also [Drupal installation requirements](https://www.drupal.org/requirements/) on D.O.
 - wget
 - composer
 - drush
+- php 5.6+
 - php built-in server (```$ drush runserver```)
 - apache
 - mysql
 - gd2
+
+Development software (check also at [D.O. Development tools](https://www.drupal.org/node/147789))
+- [docker](https://www.docker.com/)
+- IDE (eg phpstorm, netbeans etc)
+- [php codesniffer](https://github.com/squizlabs/PHP_CodeSniffer)
+- [DrupalConsole](https://drupalconsole.com/) (Drupal development tool)
+- [blackfire.io](https://blackfire.io/) (performance testing tool)
+
+### How to add new modules
+- Download the module ```drush dl [module]``` (it will be under /modules/[module])
+
+- Test it works (ui)
+- Test it can be uninstalled (ui or drush)
+- If all tests pass leave it on folder
+- If it is a requirement for a DFeature add it on the DFeature
+- Move the module on the [profile] folder (it will be under /profiles/[profile] and it will be tracked from VCS)
+- rebuild registry (```drush cr```)
+
+- If tests do not pass DO NOT USE it and try to solve the errors (patches, D.O. issues etc)
+- If tests do not pass add an issue on GH
+
+***Example: TBD (screencast)***
+
+### Development flow
+
+| data ↓ | develop (dev) | release (stage) | master (live) |
+| --- | --- | --- | --- |
+| code |- | - | - |
+| database |- | - | - |
+| drupal config |- | - | - |
+| user files |- | - | - |
+| system config |- | - | - |
+| drush etc aliases |- | - | - |
+
 
 ### Writing a test
 TBD
