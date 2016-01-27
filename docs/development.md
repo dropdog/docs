@@ -155,9 +155,11 @@ See also: #456, #789
 ```
 ### VCS - Atomic commits
 
+See more at [seesparkbox - Atomic Commits with Git](http://seesparkbox.com/foundry/atomic_commits_with_git), [freshconsulting - Developer Tip: Keep Your Commits “Atomic”](http://www.freshconsulting.com/atomic-commits/).
+
 Avoid committing “at the end of the work day”, or “whenever I feel like it”, or whenever a batch of fixes are complete. This way the VCS is just a backup of your work.
 
-Similar to the definition of "Atomic design" the "Atomic commit" refers to a commit of code that can be reused, ignored etc. We must make changes through commits as small and “atomic” as possible.
+Similar to the definition of "Atomic design" the "Atomic commit" refers to a commit of code that can be reused, ignored, separated etc. On the atomic development approach we make changes through commits as small and “atomic” as possible.
 
 Here are the principles of atomic commits:
 
@@ -166,7 +168,7 @@ Here are the principles of atomic commits:
 - Commit each fix or task as a separate change.
 - Only commit when a block of work is complete.
 - Commit each layout change separately.
-- Joint commit for layout file, code behind file, and additional resources
+- Joint commit for layout file, code behind file, and additional resources.
 
 Here are the benefits:
 
@@ -183,8 +185,23 @@ Examples of atomic commits:
 - A js effect/functionality (eg a js function)
 - A fix for a bug
 - A UI for a Drupal module
--
+- A new Dblock position on a Dtheme.
 
+In practice in order to open the editor to write the commit do not use the ```-a``` flag because it adds all the modified files to the commit!
+
+A worfklow to add only specific files on a commit:
+
+```bash
+$ git status
+    Modified: contact.html
+    Modified: contact.php
+$ git add contact.html
+$ git status
+    Modified: contact.php
+$ git commit
+# Add the commit but do not push!
+# Continue with another commit.
+```
 
 ### Applying patches
 

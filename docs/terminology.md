@@ -12,6 +12,7 @@
 - Entities
 - Content types
 - DFeature (Drupal Feature)
+- D\* (Drupal \*)
 - View mode (of Entities)
 - Form display
 - Field
