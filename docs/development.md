@@ -195,14 +195,42 @@ A worfklow to add only specific files on a commit:
 $ git status
     Modified: contact.html
     Modified: contact.php
+
 $ git add contact.html
+
 $ git status
     # Other file is ready to be commited
     Modified: contact.php
+
 $ git commit
 # Opens the default git editor so you can create the commit message.
+
 # Add the commit but do not push!
+
 # Continue with another commit.
+
+# When ready push.
+
+```
+
+A worfklow to add specific parts of a file!
+
+```git
+$ git status
+    Modified: contact.html
+    Modified: contact.php
+
+$ git add -p contact.html
+# Shows the first changed hunk in the file 'contact.html'
+# and then asks you if you want to stage it or not!
+
+$ git commit
+# Opens the default git editor so you can create the commit message.
+
+# Add the commit but do not push!
+
+# Continue with another commit.
+
 # When ready push.
 
 ```
