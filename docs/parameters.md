@@ -49,6 +49,5 @@ Is the functionality working well with current [Infrastructure](infrastructure)?
 |Drupal logs          | - | - | - | - | - | - |
 |(Google) Analytics   | - | - | - | - | - | - |
 |WYSIWYG              | - | - | - | - | - | - |
-|Spam protection      | - | - | - | - | - | - |
 |Content position/settings     | - | - | - | - | - | - |
 |Caching     | - | - | - | - | - | - |
