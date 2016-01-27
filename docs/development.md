@@ -120,7 +120,7 @@ In practice in order to open the editor to write the commit do not use the ```-m
 
 To change the default editor type:
 
-```git config --global core.editor "vim"```
+```git config --global core.editor "/usr/bin/vim"```
 
 A **masterpiece of a commit** may look like this:
 
@@ -192,15 +192,18 @@ In practice in order to open the editor to write the commit do not use the ```-a
 A worfklow to add only specific files on a commit:
 
 ```bash
+
 $ git status
     Modified: contact.html
     Modified: contact.php
 $ git add contact.html
 $ git status
+    # Other file is ready to be commited
     Modified: contact.php
 $ git commit
 # Add the commit but do not push!
 # Continue with another commit.
+
 ```
 
 ### Applying patches
