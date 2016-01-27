@@ -46,7 +46,6 @@ Is the functionality working well with current [Infrastructure](infrastructure)?
 |SEO & metatags       | - | - | - | - | - | - |
 |Email system         | - | - | - | - | - | - |
 |Drupal messages      | - | - | - | - | - | - |
-|Cron settings        | - | - | - | - | - | - |
 |Drupal logs          | - | - | - | - | - | - |
 |(Google) Analytics   | - | - | - | - | - | - |
 |WYSIWYG              | - | - | - | - | - | - |
