@@ -56,7 +56,7 @@ A lot of ideas for this page have been taken from the [KIT Feature Specification
 
 ```
 
-### Reporting issues (error etc)
+### Reporting issues (errors etc)
 There are many kind of issues. Most of the times here we refer to a bug or support issue. Not to a Task.
 
 Tasks are also issues but with a different label.
@@ -84,7 +84,7 @@ Tasks are also issues but with a different label.
 - View your [Assigned](https://github.com/issues/assigned) issues.
 - View your [Mentioned](https://github.com/issues/mentioned) issues.
 
-### Using git and VCS (Version Control System)
+### VCS - Using git-flow and related tools
 We are using the default **[git-flow](http://nvie.com/posts/a-successful-git-branching-model/) methodology** and its conventions.
 
 See the [git-flow cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/) for fast learning.
@@ -101,8 +101,90 @@ See the [git-flow cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/
 - After each successful release there will be a new **make file** from existing files/configuration.
 - Modules that are used for development (devel, masquarade etc) will be commited to Github but **they will not be imported to the make file** except if they are requirements for any of the modules of the distribution.
 
-### Git commit best practices
-TBD
+### VCS- Git commit best practices
+[Git Commit](https://git-scm.com/docs/git-commit) messages are so important for a good team collaboration as also as for a sustainable development workflow.
+
+Here are the 7 rules of a great git commit message. Taken from [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/).
+
+- Separate subject from body with a blank line.
+- Limit the subject line to 50 characters, Github and many other tools use the title on their UI.
+- Capitalize the subject line.
+- Do not end the subject line with a period!
+- **Use the imperative mood** in the subject line.
+- Wrap the body at 72 characters.
+- Use the body to explain **what and why** vs **how**.
+
+In practice in order to open the editor to write the commit do not use the ```-m``` flag because it prevents from opening the editor. Instead use:
+
+```git commit``` which opens the default editor for git.
+
+To change the default editor type:
+
+```git config --global core.editor "vim"```
+
+A **masterpiece of a commit** may look like this:
+
+```
+Summarize changes in around 50 characters or less
+
+More detailed explanatory text, if necessary. Wrap it to about 72
+characters or so. In some contexts, the first line is treated as the
+subject of the commit and the rest of the text as the body. The
+blank line separating the summary from the body is critical (unless
+you omit the body entirely); various tools like `log`, `shortlog`
+and `rebase` can get confused if you run the two together.
+
+Explain the problem that this commit is solving. Focus on why you
+are making this change as opposed to how (the code explains that).
+Are there side effects or other unintuitive consequenses of this
+change? Here's the place to explain them.
+
+Further paragraphs come after blank lines.
+
+ - Bullet points are okay, too
+
+ - Typically a hyphen or asterisk is used for the bullet, preceded
+   by a single space, with blank lines in between, but conventions
+   vary here
+
+If you use an issue tracker, put references to them at the bottom,
+like this:
+
+Resolves: #123
+See also: #456, #789
+```
+### VCS - Atomic commits
+
+Avoid committing “at the end of the work day”, or “whenever I feel like it”, or whenever a batch of fixes are complete. This way the VCS is just a backup of your work.
+
+Similar to the definition of "Atomic design" the "Atomic commit" refers to a commit of code that can be reused, ignored etc. We must make changes through commits as small and “atomic” as possible.
+
+Here are the principles of atomic commits:
+
+- Focus on one feature/fix etc at a time.
+- Create a separate branch for each task that will finish up as a group of commits. git-flow in the resque.
+- Commit each fix or task as a separate change.
+- Only commit when a block of work is complete.
+- Commit each layout change separately.
+- Joint commit for layout file, code behind file, and additional resources
+
+Here are the benefits:
+
+- Easy to roll back without affecting other changes.
+- Easy to review your code and see each incremental change.
+- Easy to make other changes on the fly (eg using [git cherry-pick](https://git-scm.com/docs/git-cherry-pick)).
+- Easy to merge features to other branches.
+
+Examples of atomic commits:
+
+- The css for an element/theme_region/page etc.
+- A DFeature
+- A different display style of a webpage (eg a theme skin)
+- A js effect/functionality (eg a js function)
+- A fix for a bug
+- A UI for a Drupal module
+-
+
 
 ### Applying patches
 
