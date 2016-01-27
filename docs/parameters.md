@@ -31,8 +31,8 @@ Is the functionality working well for the Media browser?
 
 Is the functionality working well with current [Infrastructure](infrastructure)? Do we need to add/remove packages or change settings?
 
-|Functionality | Multilingual   | Multidomain   | One Database    | Drupal 8.x     | Shared Media    | Infrastructure   |
-|--------------| ---------------| -------------| ------------------| ----------------| ---------------| ----------------|
+|Functionality | Multilingual   | Multidomain  | One Database | Drupal 8.x | Shared Media | Infrastructure  |
+|--------------| ---------------| -------------| -------------| -----------| -------------| ----------------|
 |Content Types        | - | - | - | - | - | - |
 |Content workflow     | - | - | - | - | - | - |
 |User Roles           | - | - | - | - | - | - |
