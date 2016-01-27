@@ -36,6 +36,7 @@ Is the functionality working well with current [Infrastructure](infrastructure)?
 |Content Types        | - | - | - | - | - | - |
 |Content workflow     | - | - | - | - | - | - |
 |User Roles           | - | - | - | - | - | - |
+|User Accounts        | - | - | - | - | - | - |
 |Backend design       | - | - | - | - | - | - |
 |Frontend design      | - | - | - | - | - | - |
 |Search               | - | - | - | - | - | - |
@@ -50,4 +51,4 @@ Is the functionality working well with current [Infrastructure](infrastructure)?
 |(Google) Analytics   | - | - | - | - | - | - |
 |WYSIWYG              | - | - | - | - | - | - |
 |Content position/settings     | - | - | - | - | - | - |
-|Caching     | - | - | - | - | - | - |
+|Caching              | - | - | - | - | - | - |
