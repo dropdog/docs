@@ -89,6 +89,11 @@ We are using the default **[git-flow](http://nvie.com/posts/a-successful-git-bra
 
 See the [git-flow cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/) for fast learning.
 
+**git-flow commands - short diagram**
+
+![git-flow commands - short diagram](http://danielkummer.github.io/git-flow-cheatsheet/img/git-flow-commands.png 'git-flow commands - short diagram')
+
+
 - The main project branches are ```develop, [releases], master```.
 - There is no staging branch. Staging will be each release tag.
 - Tests from the CI should run on every pull-request.
@@ -166,7 +171,7 @@ Here are the principles of atomic commits:
 - Focus on one feature/fix etc at a time.
 - Create a separate branch for each task that will finish up as a group of commits. git-flow in the resque.
 - Commit each fix or task as a separate change.
-- Only commit when a block of work is complete.
+- Only commit when a block of work is complete. Don't commit half-done work.
 - Commit each layout change separately.
 - Joint commit for layout file, code behind file, and additional resources.
 
