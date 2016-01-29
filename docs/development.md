@@ -263,7 +263,7 @@ See also [D.O. - Applying patches](https://www.drupal.org/patch/apply).
 
 See also [Developing installation profiles and distributions](https://www.drupal.org/developing/distributions).
 
-Steps to create a new release:
+Steps to create a new release (for the Profile Administrator):
 
 - Prepare files for the new release
 - Generate [make](http://drushcommands.com/drush-8x/make/) file if not exist using ```drush make-generate``````
@@ -326,11 +326,27 @@ TBD
 ### Create a pull request
 See above about VCS and git-flow.
 
-### Saving Backups
-TBD
+### Dealing with Backups
 
-### Restoring Backups
-TBD
+**Database**
+- For development use the [backup_migrate](https://www.drupal.org/project/backup_migrate) module (truncate all caches from the cache_* tables for the default backup profile).
+- Save database regularly backups with a cron job.
+- For the live site will need **in addition** to the backup_migrate backups full database backups using ```mysqldump``` (see [drush sql-dump](http://drushcommands.com/drush-8x/sql/sql-dump/) command).
+- Backups should be saved on another server (different from the Drupal installation).
+- Backups should be tested on specific times (eg once a week) to check they are working normally.
+- Backup pattern is ```[database_name]-[c].sql``` where [c] is the [ISO 8601 date (php 5+)](http://php.net/manual/en/function.date.php). Example: *livedb-2016-01-29T14:04:46+02:00.sql*.
+- For the dump database (without the backup_migrate module) avoid compressing the sql file. If you have to (eg the file is too large) use the [gzip compression](http://www.gzip.org/) only. Example: *livedb-2016-01-29T14:04:46+02:00.sql.gz*
+- We cannot have VCS for database files.
+
+**User generated public and private files**
+- Best option is to keep these files on a separate filestorage out of Drupal.
+- User generated files (eg sites/default/files) should be backup separately from the database.
+- We cannot have VCS for these files.
+
+**Restoring Backups**
+- Always take a **backup of current site** (database dump, database from backup_migrate, public/private files) before restoring a backup!
+- Never restore on the live site before testing the backups on a copy of the live site!
+- If a backup causes errors add an issue on GH and explain/ask for help.
 
 ### Setting up Permissions and user Roles
 
