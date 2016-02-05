@@ -37,7 +37,7 @@ CLI tools (shortcuts) you can (should) use:
 
 - [git-flow](https://github.com/nvie/gitflow). A method as also as a collection of commands for successful git branching and development.
 - (Optional) [git hub](https://hub.github.com/). A tool to help create pull requests, compare commits, view issues and make your life on GH better.
-- (Optional) [git extras](https://github.com/tj/git-extras). Some useful git aliases/wrappers for humans (summary, undo, ignore changelog etc)!
+- (Optional) [git extras](https://github.com/tj/git-extras). Some useful git aliases/wrappers for humans (summary, undo, ignore, changelog etc)!
 
 GUI Clients you can use. They are mostly used to see visual graphs of the commits, to solve conflicts, to browse repos etc.
 - [git-scm.com/downloads/guis](https://git-scm.com/downloads/guis)
@@ -79,7 +79,7 @@ GUI Clients you can use. They are mostly used to see visual graphs of the commit
 - [drupal views:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/views-debug.html)
 
 **Drupal modules**
-- [devel](https://www.drupal.org/project/devel) (devel, webprofiler)
+- [devel](https://www.drupal.org/project/devel) (devel, webprofiler). See docs for the [WebProfiler](https://github.com/lussoluca/webprofiler).
 
 **PHP debug and testing**
 - [blackfire.io](https://blackfire.io/). See [24 Days of Blackfire](https://blackfire.io/docs/24-days/index)
