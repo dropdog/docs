@@ -251,9 +251,19 @@ See also [D.O. - Applying patches](https://www.drupal.org/patch/apply).
 - If patch works include it with the commit!
 
 ### Installing the distribution
-- Using **drush** only (make, site-install, db sync, file dl etc)
+- Using **drush** only (make, site-install, db sync, file dl etc. Check ```drush make --help```)
 - Using git only (we need a full site repo though)
 - Using UI software (is that needed?)
+
+Example of a build using Drush.
+
+```
+git clone --branch [branch_name] git@github.com:[org_name]/[repository].git
+cd [repository]
+drush make --prepare-install build-[profile_name].make [my_custom_www_path]
+cd [my_custom_www_path]
+drush site-install [profile_name] --db-url="mysql://[database_user]:[database_pass]@localhost/[database_name]"
+```
 
 ### Update the distribution
 - Normal method (remove old files, keep backup etc).
@@ -300,7 +310,7 @@ Development software (check also at [D.O. Development tools](https://www.drupal.
 - Test it can be uninstalled (ui or drush)
 - If all tests pass leave it on folder
 - If it is a requirement for a DFeature add it on the DFeature
-- Move the module on the [profile] folder (it will be under /profiles/[profile] and it will be tracked from VCS)
+- Move the module on the [profile] folder (it will be under **/profiles/[profile]** and it will be tracked from VCS)
 - rebuild registry (```drush cr```)
 
 - If tests do not pass DO NOT USE it and try to solve the errors (patches, D.O. issues etc)
