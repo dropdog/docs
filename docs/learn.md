@@ -22,16 +22,17 @@
 ### Play with git and VCS
 
 Useful git cheatsheets:
-- [Official git reference](https://git-scm.com/docs)
-- [training.github.com, github-git-cheat-sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
-- [git-tower, git-cheat-sheet](https://www.git-tower.com/blog/git-cheat-sheet/)
-- [Advanced git cheat-sheet](http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf)
+
+ - [Official git reference](https://git-scm.com/docs)
+ - [training.github.com, github-git-cheat-sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+ - [git-tower, git-cheat-sheet](https://www.git-tower.com/blog/git-cheat-sheet/)
+ - [Advanced git cheat-sheet](http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf)
 
 Interactive tools to learn git commands and terminology:
 
-- [Visual git cheat-sheet](http://ndpsoftware.com/git-cheatsheet.html)
-- [Learn git in 15 minutes](https://try.github.io)
-- [Learn git branching](http://pcottle.github.io/learnGitBranching/)
+ - [Visual git cheat-sheet](http://ndpsoftware.com/git-cheatsheet.html)
+ - [Learn git in 15 minutes](https://try.github.io)
+ - [Learn git branching](http://pcottle.github.io/learnGitBranching/)
 
 CLI tools (shortcuts) you can (should) use:
 
