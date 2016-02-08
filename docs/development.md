@@ -322,17 +322,13 @@ Development software (check also at [D.O. Development tools](https://www.drupal.
 ### Development flow
 
 | data ↓ | develop (dev) | release (stage) | master (live) |
-| --- | --- | --- | --- |
-| code |- | - | - |
-| database |- | - | - |
-| drupal config |- | - | - |
-| user files |- | - | - |
-| system config |- | - | - |
-| drush etc aliases |- | - | - |
-
-
-### Writing a test
-TBD
+| ---               | --- | --- | --- |
+| code              | from local branches | from dev | from stage (release) |
+| database          |from live | from live | - |
+| drupal config     |from live | from live | - |
+| user files        |from live | from live | - |
+| system config     | dev | same to live | - |
+| drush etc aliases | common | common | none |
 
 ### Create a pull request
 See above about VCS and git-flow.
