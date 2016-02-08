@@ -376,13 +376,13 @@ See above about VCS and git-flow.
 - Add a tag to me same as your nickname, Github username etc on each Views you create.
 - (~) Do not add a Menu for the Views through the Views settings page.
 - Always override default system views if they are to be used on the Distro.
-- Do not use Ajax by default for a Views.
+- Do not use Ajax by default for a View.
 - Always provide a simple text for "No results behavior". Example: "No results".
 - Always use **Access: Permission | ...** for the Views access. Do not use Roles.
 - Add useful Administrative comments for each Views.
 - Machine name of each Views must be one word, sort and meaningful. See [more details](#building-content-types-and-fields) about this rule above.
 - Always provide a Title for the Views.
-- If you clone a Views be careful to satisfy the above rules.
+- If you clone a View be careful to satisfy the above rules.
 
 ### Building Custom configuration (admin) pages
 - If you group form items use the parent variable name as prefix for all the children items.
