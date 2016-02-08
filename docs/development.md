@@ -87,7 +87,8 @@ Tasks are also issues but with a different label.
 ### VCS - Using git-flow and related tools
 We are using the default **[git-flow](http://nvie.com/posts/a-successful-git-branching-model/) methodology** and its conventions.
 
-See the [git-flow cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/) for fast learning.
+- See the [git-flow cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/) for fast learning.
+- See the [command line manual](https://github.com/nvie/gitflow/wiki/Command-Line-Arguments)
 
 **git-flow commands - short diagram**
 
