@@ -9,7 +9,8 @@ Information about the system that runs the Distribution with the associated soft
 - database: MariaDB 10.1.10
 - PHP OPcode caching: Yes
 - drupal: 8.x
-- [twig C](http://twig.sensiolabs.org/doc/installation.html#installing-the-c-extension): No
+
+- [twig C](http://twig.sensiolabs.org/doc/installation.html#installing-the-c-extension): No ()
 
 - PHP memory_limit: 128M
 - PHP max_input_vars:

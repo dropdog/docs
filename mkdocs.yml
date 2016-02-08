@@ -13,6 +13,7 @@ pages:
 - Infrastructure: 'infrastructure.md'
 - Development: 'development.md'
 - Theming: 'theming.md'
+- Tests: 'tests.md'
 - Scripts: 'scripts.md'
 - Examples: 'examples.md'
 - Development thoughts: 'thoughts.md'
