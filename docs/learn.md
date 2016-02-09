@@ -3,9 +3,9 @@
 
 ### Useful 8.x cheatsheets
 
-- [Drupal 8 entity API](http://wizzlern.nl/sites/wizzlern.nl/files/artikel/drupal-content-entity-8.0.pdf)
-- [Drupal 7 to 8](http://nuvole.org/sites/default/files/Drupal-7-to-Drupal-8-Cheatsheet.pdf)
-- [Drupal 8 Configuration schema](http://hojtsy.hu/files/ConfigSchemaCheatSheet1.5.pdf)
+ - [Drupal 8 entity API](http://wizzlern.nl/sites/wizzlern.nl/files/artikel/drupal-content-entity-8.0.pdf)
+ - [Drupal 7 to 8](http://nuvole.org/sites/default/files/Drupal-7-to-Drupal-8-Cheatsheet.pdf)
+ - [Drupal 8 Configuration schema](http://hojtsy.hu/files/ConfigSchemaCheatSheet1.5.pdf)
 
 ### Using Composer
 
@@ -13,9 +13,10 @@
 
 ### Building with Features
 
-### Create a multilingual install with Dummy content and inspect the database
+### Create a multilingual website
+Create a multilingual installation with Dummy content and inspect the database.
 
-- Use this distro: [drupal.org/project/multilingual_demo](https://www.drupal.org/project/multilingual_demo)
+Use this distro: [drupal.org/project/multilingual_demo](https://www.drupal.org/project/multilingual_demo)
 
 ### Play with git and VCS
 
@@ -79,12 +80,15 @@ GUI Clients you can use. They are mostly used to see visual graphs of the commit
  - [drupal views:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/views-debug.html)
 
 **Drupal modules**
+
  - [devel](https://www.drupal.org/project/devel) (devel, webprofiler). See the docs for the [WebProfiler](https://github.com/lussoluca/webprofiler).
 
 **PHP debug and testing**
+
  - [blackfire.io](https://blackfire.io/). See [24 Days of Blackfire](https://blackfire.io/docs/24-days/index)
 
 **Database debug**
+
  - [MySQL Workbench ](https://www.mysql.com/products/workbench/)
 
 ### Create an issue
