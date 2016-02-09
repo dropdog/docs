@@ -5,21 +5,21 @@ Please read all the file and not individual sections. It was written like this f
 A lot of ideas for this page have been taken from the [KIT Feature Specification](http://cgit.drupalcode.org/kit/tree/kitf.txt?id=refs/heads;id2=master).
 
 ### How to work
-- Assign a task to your own or pick an existing one.
-- Deliver new Feature/Functionality *fast*
-- Run tests (localy or on the test server)
-- Improve/Refract code
-- Recreate the Feature/Functionality
-- Push the code on the VCS (pull request)
-- If tests are green **move the new code** on the appropriate folder inside ```/profiles/[distro-name]```
-- Update related issue and inform the other team members (if they need to).
-- Done!
+ - Assign a task to your own or pick an existing one.
+ - Deliver new Feature/Functionality *fast*
+ - Run tests (localy or on the test server)
+ - Improve/Refract code
+ - Recreate the Feature/Functionality
+ - Push the code on the VCS (pull request)
+ - If tests are green **move the new code** on the appropriate folder inside ```/profiles/[distro-name]```
+ - Update related issue and inform the other team members (if they need to).
+ - Done!
 
-- Always document what you have done. On Code, on the Feature, on the Commit, on these Docs!
+ - Always document what you have done. On Code, on the Feature, on the Commit, on these Docs!
 
 ### Project folders and structure
-- We are only tracking the ```/profiles/[distro-name]``` folder! Not any other files.
-- The distribution folder will/may have this structure (see at [github.com/dropdog/docs/tree/master/docs/structure/profile](https://github.com/dropdog/docs/tree/master/docs/structure/profile))
+ - We are only tracking the ```/profiles/[distro-name]``` folder! Not any other files.
+ - The distribution folder will/may have this structure (see at [github.com/dropdog/docs/tree/master/docs/structure/profile](https://github.com/dropdog/docs/tree/master/docs/structure/profile))
 
 ```
 ├── config/
@@ -61,11 +61,11 @@ There are many kind of issues. Most of the times here we refer to a bug or suppo
 
 Tasks are also issues but with a different label.
 
-- First search, then submit an issue.
-- Create the issue only on Github.
-- There must be only one unique issue and no duplicates.
+ - First search, then submit an issue.
+ - Create the issue only on Github.
+ - There must be only one unique issue and no duplicates.
 
-- On the issue you must include
+ - On the issue you must include
   - steps to reproduce the issue
   - files that are related
   - the webpage(s) that shows the issue
@@ -75,51 +75,51 @@ Tasks are also issues but with a different label.
   - the version of the software (eg Drupal core) you are using
   - the error logs if any (Drupal's database_log or system_log)
 
-- Every issue must be as much as possible self hosted on Github. Images, assets, code etc should better live on the Github to avoid missing things etc later.
-- Add the related tags (**labels** and **milestones**)! If there is no a tag you are looking for ask to the Admin to create one.
-- Closing and reopening issues is not something to avoid. Open any issue if you have to do more job, if you need declaration, if you want to keep it on front etc.
-- We are going to refer to issues on the git commits using the #number of the issue.
-- Mention other people using ```@mention```. If you want to cc them use ```/cc @user1 @user2``` etc.
-- View all your GH issues at [github.com/issues](https://github.com/issues).
-- View your [Assigned](https://github.com/issues/assigned) issues.
-- View your [Mentioned](https://github.com/issues/mentioned) issues.
+ - Every issue must be as much as possible self hosted on Github. Images, assets, code etc should better live on the Github to avoid missing things etc later.
+ - Add the related tags (**labels** and **milestones**)! If there is no a tag you are looking for ask to the Admin to create one.
+ - Closing and reopening issues is not something to avoid. Open any issue if you have to do more job, if you need declaration, if you want to keep it on front etc.
+ - We are going to refer to issues on the git commits using the #number of the issue.
+ - Mention other people using ```@mention```. If you want to cc them use ```/cc @user1 @user2``` etc.
+ - View all your GH issues at [github.com/issues](https://github.com/issues).
+ - View your [Assigned](https://github.com/issues/assigned) issues.
+ - View your [Mentioned](https://github.com/issues/mentioned) issues.
 
 ### VCS - Using git-flow and related tools
 We are using the default **[git-flow](http://nvie.com/posts/a-successful-git-branching-model/) methodology** and its conventions.
 
-- See the [git-flow cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/) for fast learning.
-- See the [command line manual](https://github.com/nvie/gitflow/wiki/Command-Line-Arguments)
+ - See the [git-flow cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/) for fast learning.
+ - See the [command line manual](https://github.com/nvie/gitflow/wiki/Command-Line-Arguments)
 
 **git-flow commands - short diagram**
 
 ![git-flow commands - short diagram](http://danielkummer.github.io/git-flow-cheatsheet/img/git-flow-commands.png 'git-flow commands - short diagram')
 
 
-- The main project branches are ```develop, [releases], master```.
-- There is no staging branch. Staging will be each release tag.
-- Tests from the CI should run on every pull-request.
-- Tests on live servers should run on every [Release].
-- Each release will have this name pattern ```[drupal-version]-profile-release]```. Example **8.0.1-1.0**. Different releases may exist for the same profile version (so only the Drupal version will change).
-- Patches that are submitted from D.O. or other places should be commited with the files on git!
-- Only the Project manager should be able to merge.
-- We are starting development always from **develop** branch except if there is a **hotfix**.
-- When we create a pull-request you have to commit on the same pull-request (using a local branch) and when ready merge it.
-- After each successful release there will be a new **make file** from existing files/configuration.
-- Modules that are used for development (devel, masquarade etc) will be commited to Github but **they will not be imported to the make file** except if they are requirements for any of the modules of the distribution.
-- If you need a publish a branch that should NOT be merged use this naming pattern ```no-merge-[branch_name]```.
+ - The main project branches are ```develop, [releases], master```.
+ - There is no staging branch. Staging will be each release tag.
+ - Tests from the CI should run on every pull-request.
+ - Tests on live servers should run on every [Release].
+ - Each release will have this name pattern ```[drupal-version]-profile-release]```. Example **8.0.1-1.0**. Different releases may exist for the same profile version (so only the Drupal version will change).
+ - Patches that are submitted from D.O. or other places should be commited with the files on git!
+ - Only the Project manager should be able to merge.
+ - We are starting development always from **develop** branch except if there is a **hotfix**.
+ - When we create a pull-request you have to commit on the same pull-request (using a local branch) and when ready merge it.
+ - After each successful release there will be a new **make file** from existing files/configuration.
+ - Modules that are used for development (devel, masquarade etc) will be commited to Github but **they will not be imported to the make file** except if they are requirements for any of the modules of the distribution.
+ - If you need a publish a branch that should NOT be merged use this naming pattern ```no-merge-[branch_name]```.
 
-### VCS- Git commit best practices
+### VCS - Git commit best practices
 [Git Commit](https://git-scm.com/docs/git-commit) messages are so important for a good team collaboration as also as for a sustainable development workflow.
 
 Here are the 7 rules of a great git commit message. Taken from [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/).
 
-- Separate subject from body with a blank line.
-- Limit the subject line to 50 characters, Github and many other tools use the title on their UI.
-- Capitalize the subject line.
-- Do not end the subject line with a period!
-- **Use the imperative mood** in the subject line.
-- Wrap the body at 72 characters.
-- Use the body to explain **what and why** vs **how**.
+ - Separate subject from body with a blank line.
+ - Limit the subject line to 50 characters, Github and many other tools use the title on their UI.
+ - Capitalize the subject line.
+ - Do not end the subject line with a period!
+ - **Use the imperative mood** in the subject line.
+ - Wrap the body at 72 characters.
+ - Use the body to explain **what and why** vs **how**.
 
 In practice in order to open the editor to write the commit do not use the ```-m``` flag because it prevents from opening the editor. Instead use:
 
@@ -170,29 +170,29 @@ Similar to the definition of "Atomic design" the "Atomic commit" refers to a com
 
 Here are the principles of atomic commits:
 
-- Focus on one feature/fix etc at a time.
-- Create a separate branch for each task that will finish up as a group of commits. git-flow in the resque.
-- Commit each fix or task as a separate change.
-- Only commit when a block of work is complete. Don't commit half-done work.
-- Commit each layout change separately.
-- Joint commit for layout file, code behind file, and additional resources.
+ - Focus on one feature/fix etc at a time.
+ - Create a separate branch for each task that will finish up as a group of commits. git-flow in the resque.
+ - Commit each fix or task as a separate change.
+ - Only commit when a block of work is complete. Don't commit half-done work.
+ - Commit each layout change separately.
+ - Joint commit for layout file, code behind file, and additional resources.
 
 Here are the benefits:
 
-- Easy to roll back without affecting other changes.
-- Easy to review your code and see each incremental change.
-- Easy to make other changes on the fly (eg using [git cherry-pick](https://git-scm.com/docs/git-cherry-pick)).
-- Easy to merge features to other branches.
+ - Easy to roll back without affecting other changes.
+ - Easy to review your code and see each incremental change.
+ - Easy to make other changes on the fly (eg using [git cherry-pick](https://git-scm.com/docs/git-cherry-pick)).
+ - Easy to merge features to other branches.
 
 Examples of atomic commits:
 
-- The css for an element/theme_region/page etc.
-- A DFeature
-- A different display style of a webpage (eg a theme skin)
-- A js effect/functionality (eg a js function)
-- A fix for a bug
-- A UI for a Drupal module
-- A new Dblock position on a Dtheme.
+ - The css for an element/theme_region/page etc.
+ - A DFeature
+ - A different display style of a webpage (eg a theme skin)
+ - A js effect/functionality (eg a js function)
+ - A fix for a bug
+ - A UI for a Drupal module
+ - A new Dblock position on a Dtheme.
 
 In practice in order to open the editor to write the commit do not use the ```-a``` flag because it adds all the modified files to the commit!
 
@@ -246,16 +246,15 @@ $ git commit
 
 See also [D.O. - Applying patches](https://www.drupal.org/patch/apply).
 
-- Get into the folder that will apply the patch
-- Download the patch fro D.O.
-- Apply the patch ```patch -p1 < [patch_file]```
-- Check if patch works (running tests and/or with the UI)
-- If patch works include it with the commit!
+ - Get into the folder that will apply the patch
+ - Download the patch fro D.O.
+ - Apply the patch ```patch -p1 < [patch_file]```
+ - Check if patch works (running tests and/or with the UI)
+ - If patch works include it with the commit!
 
 ### Installing the distribution
-- Using **drush** only (make, site-install, db sync, file dl etc. Check ```drush make --help```)
-- Using git only (we need a full site repo though)
-- Using UI software (is that needed?)
+ - Using **drush** only (make, site-install, db sync, file dl etc. Check ```drush make --help```)
+ - Using git only (from the full site repo including Drupal core)
 
 Example of a build using Drush.
 
