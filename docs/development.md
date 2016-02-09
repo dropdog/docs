@@ -106,6 +106,7 @@ We are using the default **[git-flow](http://nvie.com/posts/a-successful-git-bra
 - When we create a pull-request you have to commit on the same pull-request (using a local branch) and when ready merge it.
 - After each successful release there will be a new **make file** from existing files/configuration.
 - Modules that are used for development (devel, masquarade etc) will be commited to Github but **they will not be imported to the make file** except if they are requirements for any of the modules of the distribution.
+- If you need a publish a branch that should NOT be merged use this naming pattern ```no-merge-[branch_name]```.
 
 ### VCS- Git commit best practices
 [Git Commit](https://git-scm.com/docs/git-commit) messages are so important for a good team collaboration as also as for a sustainable development workflow.
