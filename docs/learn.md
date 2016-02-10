@@ -101,4 +101,6 @@ GUI Clients you can use. They are mostly used to see visual graphs of the commit
 
 ### Useful browser extensions and plugins
 
-### Other (Vagrant/Otto, Docker, Continuous Integration)...
+### Other
+
+(Vagrant/Otto, Docker, Continuous Integration ...)

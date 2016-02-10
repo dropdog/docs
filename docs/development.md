@@ -258,12 +258,18 @@ See also [D.O. - Applying patches](https://www.drupal.org/patch/apply).
 
 Example of a build using Drush.
 
-```
-git clone --branch [branch_name] git@github.com:[org_name]/[repository].git
-cd [repository]
-drush make --prepare-install build-[profile_name].make [my_custom_www_path]
-cd [my_custom_www_path]
-drush site-install [profile_name] --db-url="mysql://[database_user]:[database_pass]@localhost/[database_name]"
+```cli
+git clone --branch <branch_name>
+
+git@github.com:<org_name>/<repository>.git
+
+cd <repository>
+
+drush make --prepare-install build-<profile_name>.make <my/www/path>
+
+cd <my/www/path>
+
+drush site-install <profile_name> --db-url="mysql://<db_user>:<db_pass>@localhost/<db_name>"
 ```
 
 ### Update the distribution
@@ -276,46 +282,46 @@ See also [Developing installation profiles and distributions](https://www.drupal
 
 Steps to create a new release (for the Profile Administrator):
 
-- Prepare files for the new release
-- Generate [make](http://drushcommands.com/drush-8x/make/) file if not exist using ```drush make-generate``````
-- Update make file if exist using ```drush make-update```
-- Verify the make file using ```drush verify-makefile``` (this step requires the drush plugin [drupalorg_drush](https://www.drupal.org/project/drupalorg_drush))
-- Update CHANGELOG.txt
-- Update [profile].info.yml (you can see the list of modules using ```drush pm-list --type=module --status=enabled --format=list```)
-- Inform related services for the new release (eg CI webhooks)
-- (Optional) Update PATCHES.txt
-- Create a git tag for the release and push the new tag on the repository
+ - Prepare files for the new release
+ - Generate [make](http://drushcommands.com/drush-8x/make/) file if not exist using ```drush make-generate``````
+ - Update make file if exist using ```drush make-update```
+ - Verify the make file using ```drush verify-makefile``` (this step requires the drush plugin [drupalorg_drush](https://www.drupal.org/project/drupalorg_drush))
+ - Update CHANGELOG.txt
+ - Update [profile].info.yml (you can see the list of modules using ```drush pm-list --type=module --status=enabled --format=list```)
+ - Inform related services for the new release (eg CI webhooks)
+ - (Optional) Update PATCHES.txt
+ - Create a git tag for the release and push the new tag on the repository
 
 ### Setting up the (local) development environment
 Required software (to install and use Drupal). See also [Drupal installation requirements](https://www.drupal.org/requirements/) on D.O.
-- wget
-- composer
-- drush
-- php 5.6+
-- php built-in server (```$ drush runserver```)
-- apache
-- mysql
-- gd2
+ - wget
+ - composer
+ - drush
+ - php 5.6+
+ - php built-in server (```$ drush runserver```)
+ - apache
+ - mysql
+ - gd2
 
 Development software (check also at [D.O. Development tools](https://www.drupal.org/node/147789))
-- [docker](https://www.docker.com/)
-- IDE (eg phpstorm, netbeans etc)
-- [php codesniffer](https://github.com/squizlabs/PHP_CodeSniffer)
-- [DrupalConsole](https://drupalconsole.com/) (Drupal development tool)
-- [blackfire.io](https://blackfire.io/) (performance testing tool)
+ - [docker](https://www.docker.com/)
+ - IDE (eg phpstorm, netbeans etc)
+ - [php codesniffer](https://github.com/squizlabs/PHP_CodeSniffer)
+ - [DrupalConsole](https://drupalconsole.com/) (Drupal development tool)
+ - [blackfire.io](https://blackfire.io/) (performance testing tool)
 
 ### How to add new modules
-- Download the module ```drush dl [module]``` (it will be under /modules/[module])
+ - Download the module ```drush dl [module]``` (it will be under /modules/[module])
 
-- Test it works (ui)
-- Test it can be uninstalled (ui or drush)
-- If all tests pass leave it on folder
-- If it is a requirement for a DFeature add it on the DFeature
-- Move the module on the [profile] folder (it will be under **/profiles/[profile]** and it will be tracked from VCS)
-- rebuild registry (```drush cr```)
+ - Test it works (ui)
+ - Test it can be uninstalled (ui or drush)
+ - If all tests pass leave it on folder
+ - If it is a requirement for a DFeature add it on the DFeature
+ - Move the module on the [profile] folder (it will be under **/profiles/[profile]** and it will be tracked from VCS)
+ - rebuild registry (```drush cr```)
 
-- If tests do not pass DO NOT USE it and try to solve the errors (patches, D.O. issues etc)
-- If tests do not pass add an issue on GH
+ - If tests do not pass DO NOT USE it and try to solve the errors (patches, D.O. issues etc)
+ - If tests do not pass add an issue on GH
 
 ***Example: TBD (screencast)***
 
@@ -336,79 +342,97 @@ See above about VCS and git-flow.
 ### Dealing with Backups
 
 **Database**
-- For development use the [backup_migrate](https://www.drupal.org/project/backup_migrate) module (truncate all caches from the cache_* tables for the default backup profile).
-- Save database regularly backups with a cron job.
-- For the live site will need **in addition** to the backup_migrate backups full database backups using ```mysqldump``` (see [drush sql-dump](http://drushcommands.com/drush-8x/sql/sql-dump/) command).
-- Backups should be saved on another server (different from the Drupal installation).
-- Backups should be tested on specific times (eg once a week) to check they are working normally.
-- Backup pattern is ```[database_name]-[c].sql``` where [c] is the [ISO 8601 date (php 5+)](http://php.net/manual/en/function.date.php). Example: *livedb-2016-01-29T14:04:46+02:00.sql*.
-- For the dump database (without the backup_migrate module) avoid compressing the sql file. If you have to (eg the file is too large) use the [gzip compression](http://www.gzip.org/) only. Example: *livedb-2016-01-29T14:04:46+02:00.sql.gz*
-- We cannot have VCS for database files.
+
+ - For development use the [backup_migrate](https://www.drupal.org/project/backup_migrate) module (truncate all caches from the cache_* tables for the default backup profile).
+ - Save database regularly backups with a cron job.
+ - For the live site will need **in addition** to the backup_migrate backups full database backups using ```mysqldump``` (see [drush sql-dump](http://drushcommands.com/drush-8x/sql/sql-dump/) command).
+ - Backups should be saved on another server (different from the Drupal installation).
+ - Backups should be tested on specific times (eg once a week) to check they are working normally.
+ - Backup pattern is ```[database_name]-[c].sql``` where [c] is the [ISO 8601 date (php 5+)](http://php.net/manual/en/function.date.php). Example: *livedb-2016-01-29T14:04:46+02:00.sql*.
+ - For the dump database (without the backup_migrate module) avoid compressing the sql file. If you have to (eg the file is too large) use the [gzip compression](http://www.gzip.org/) only. Example: *livedb-2016-01-29T14:04:46+02:00.sql.gz*
+ - We cannot have VCS for database files.
 
 **User generated public and private files**
-- Best option is to keep these files on a separate filestorage out of Drupal.
-- User generated files (eg sites/default/files) should be backup separately from the database.
-- We cannot have VCS for these files.
+
+ - Best option is to keep these files on a separate filestorage out of Drupal.
+ - User generated files (eg sites/default/files) should be backup separately from the database.
+ - We cannot have VCS for these files.
 
 **Restoring Backups**
-- Always take a **backup of current site** (database dump, database from backup_migrate, public/private files) before restoring a backup!
-- Never restore on the live site before testing the backups on a copy of the live site!
-- If a backup causes errors add an issue on GH and explain/ask for help.
+
+ - Always take a **backup of current site** (database dump, database from backup_migrate, public/private files) before restoring a backup!
+ - Never restore on the live site before testing the backups on a copy of the live site!
+ - If a backup causes errors add an issue on GH and explain/ask for help.
 
 ### Setting up Permissions and user Roles
 
-- Every custom module should define its own permissions. Never reuse an existing permission!
-- If there is separate functionality on a custom module create all the necessary permissions (eg permission to "Access the display" and to "Administer the module" etc).
-- All the permissions names and descriptions should start with a common used verb such as: "View ...", "Administer ...", "Delete ..." etc.
-- A Drupal user with CRUD allowed will usually have more than 1 Roles. Saying that do not try to *package* many permissions per Role and better split them accordingly across Roles.
+ - Every custom module should define its own permissions. Never reuse an existing permission!
+ - If there is separate functionality on a custom module create all the necessary permissions (eg permission to "Access the display" and to "Administer the module" etc).
+ - All the permissions names and descriptions should start with a common used verb such as: "View ...", "Administer ...", "Delete ..." etc.
+ - A Drupal user with CRUD allowed will usually have more than 1 Roles. Saying that do not try to *package* many permissions per Role and better split them accordingly across Roles.
 
 ### Building Content types and Fields
 
-- Avoid taxonomy term reference fields! Instead use Entityreference fields with a Content type that will be used as a "taxonomy".
-- Labels should not be displayed inline but blocks (```display: block```)
-- Fieldsets should be avoided. If not they should be open by default.
-- All fields require a Description to inform the user about their need.
-- No field should be shared. Never reuse fields!
-- Display view modes should be generic for all Content types and not specific (eg event_full).
-- Fields machine name should follow this pattern for the machine name: ```field_[content_type_machine_name]_[short_name]```
-- Content types, Views and Custom Blocks should follow this pattern for the machine name: ```[machinename]```. That means you should use only letters and no special character or space. Machine names must be short but descriptive. Avoid very generic machine names or names that have been used already on the site even for another type of functionality (Views, Content types, Blocks, Plugins etc).
+ - Avoid taxonomy term reference fields! Instead use Entityreference fields with a Content type that will be used as a "taxonomy".
+ - Labels should not be displayed inline but blocks (```display: block```)
+ - Fieldsets should be avoided. If not they should be open by default.
+ - All fields require a Description to inform the user about their need.
+ - No field should be shared. Never reuse fields!
+ - Display view modes should be generic for all Content types and not specific (eg event_full).
+ - Fields machine name should follow this pattern for the machine name: ```field_[content_type_machine_name]_[short_name]```
+ - Content types, Views and Custom Blocks should follow this pattern for the machine name: ```[machinename]```. That means you should use only letters and no special character or space. Machine names must be short but descriptive. Avoid very generic machine names or names that have been used already on the site even for another type of functionality (Views, Content types, Blocks, Plugins etc).
+
+> According to the above we are supposed to use Entityreference instead of Taxonomy Term reference.
+This is the rule except if there are cases that are met.
+
+These cases are:
+
+ - We need a web page (views) to show the referenced items (taxonomy built-in option)
+ - We need advanced filtering for views (exposed filters etc)
+ - We need tree structure of the references (taxonomy built-in option)
+ - We need autocomplete (instant creation) fields when creating references
+ - We need a related functionality that works only (or better) with Taxonomy (eg search_api)
+
+So, if 2 or more of the above cases are in need then we could discuss to use Taxonomy.
 
 ### Building (Drupal) Views
-- Create one Views per Views Display except if it is a requirement. For example a Block Views and a Page Views for the same Content type should exist on different Views.
-- Always rename the machine name of the Views to remove the numerical suffix (```page_1``` should be ```page```)
-- Do not add custom CSS classes on the whole Views.
-- Always use **Format > Show: Content** for the views row in order to move the row display control on Content types. If there is no available content type view mode create one.
-- Always package (with Features) the Views with the associated Entity type (eg Blog) except if there is a special use case of the Views.
-- It is required to give a meaningful (Administrative) name, description and tags to the Views. Do not leave the default values.
-- Add a tag to me same as your nickname, Github username etc on each Views you create.
-- (~) Do not add a Menu for the Views through the Views settings page.
-- Always override default system views if they are to be used on the Distro.
-- Do not use Ajax by default for a View.
-- Always provide a simple text for "No results behavior". Example: "No results".
-- Always use **Access: Permission | ...** for the Views access. Do not use Roles.
-- Add useful Administrative comments for each Views.
-- Machine name of each Views must be one word, sort and meaningful. See [more details](#building-content-types-and-fields) about this rule above.
-- Always provide a Title for the Views.
-- If you clone a View be careful to satisfy the above rules.
+
+ - Create one Views per Views Display except if it is a requirement. For example a Block Views and a Page Views for the same Content type should exist on different Views.
+ - Always rename the machine name of the Views to remove the numerical suffix (```page_1``` should be ```page```)
+ - Do not add custom CSS classes on the whole Views.
+ - Always use **Format > Show: Content** for the views row in order to move the row display control on Content types. If there is no available content type view mode create one.
+ - Always package (with Features) the Views with the associated Entity type (eg Blog) except if there is a special use case of the Views.
+ - It is required to give a meaningful (Administrative) name, description and tags to the Views. Do not leave the default values.
+ - Add a tag to me same as your nickname, Github username etc on each Views you create.
+ - (~) Do not add a Menu for the Views through the Views settings page.
+ - Always override default system views if they are to be used on the Distro.
+ - Do not use Ajax by default for a View.
+ - Always provide a simple text for "No results behavior". Example: "No results".
+ - Always use **Access: Permission | ...** for the Views access. Do not use Roles.
+ - Add useful Administrative comments for each Views.
+ - Machine name of each Views must be one word, sort and meaningful. See [more details](#building-content-types-and-fields) about this rule above.
+ - Always provide a Title for the Views.
+ - If you clone a View be careful to satisfy the above rules.
 
 ### Building Custom configuration (admin) pages
-- If you group form items use the parent variable name as prefix for all the children items.
+
+ - If you group form items use the parent variable name as prefix for all the children items.
 ```php
 // Parent (Group)
 $form['parent_group'] = array();
 // Child
 $form['parent_group']['parent_group_child'] = array();
 ```
-- Always build such pages with Drupal Console generate function to eliminate errors.
+ - Always build such pages with Drupal Console generate function to eliminate errors.
 
 ### Building and packaging with Features
 
-- One Feature per Content type (CT). Each Content Type Feature (CTF) will package the CT fields, node form, related views, related blocks and user permissions.
+ - One Feature per Content type (CT). Each Content Type Feature (CTF) will package the CT fields, node form, related views, related blocks and user permissions.
 
 ### Adding 3rd party libraries
 
-- Before adding an external library/dependency check if it is already available (here is a [list](http://cgit.drupalcode.org/drupal/tree/core/composer.txt) of the necessary 3rd party libraries for Core ). Do not confuse this with the [Core libraries](http://cgit.drupalcode.org/drupal/tree/core/core.libraries.yml) which is used to load the above libraries within Drupal.
-- Prefer tiny and specific libraries.
-- Check the library popularity on its official repository. Avoid libraries with no traffic at all.
-- If multiple release sources (eg packagist, apt-get etc) are available for the library prefer Github which is most of the times the development source.
-- Always use a release of a library (if available) and not a generic branch.
+ - Before adding an external library/dependency check if it is already available (here is a [list](http://cgit.drupalcode.org/drupal/tree/core/composer.txt) of the necessary 3rd party libraries for Core ). Do not confuse this with the [Core libraries](http://cgit.drupalcode.org/drupal/tree/core/core.libraries.yml) which is used to load the above libraries within Drupal.
+ - Prefer tiny and specific libraries.
+ - Check the library popularity on its official repository. Avoid libraries with no traffic at all.
+ - If multiple release sources (eg packagist, apt-get etc) are available for the library prefer Github which is most of the times the development source.
+ - Always use a release of a library (if available) and not a generic branch.
