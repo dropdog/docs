@@ -283,7 +283,7 @@ See also [Developing installation profiles and distributions](https://www.drupal
 Steps to create a new release (for the Profile Administrator):
 
  - Prepare files for the new release
- - Generate [make](http://drushcommands.com/drush-8x/make/) file if not exist using ```drush make-generate``````
+ - Generate [make](http://drushcommands.com/drush-8x/make/) file if not exist using ```drush make-generate```
  - Update make file if exist using ```drush make-update```
  - Verify the make file using ```drush verify-makefile``` (this step requires the drush plugin [drupalorg_drush](https://www.drupal.org/project/drupalorg_drush))
  - Update CHANGELOG.txt
@@ -294,6 +294,7 @@ Steps to create a new release (for the Profile Administrator):
 
 ### Setting up the (local) development environment
 Required software (to install and use Drupal). See also [Drupal installation requirements](https://www.drupal.org/requirements/) on D.O.
+
  - wget
  - composer
  - drush
@@ -304,6 +305,7 @@ Required software (to install and use Drupal). See also [Drupal installation req
  - gd2
 
 Development software (check also at [D.O. Development tools](https://www.drupal.org/node/147789))
+
  - [docker](https://www.docker.com/)
  - IDE (eg phpstorm, netbeans etc)
  - [php codesniffer](https://github.com/squizlabs/PHP_CodeSniffer)
@@ -311,6 +313,7 @@ Development software (check also at [D.O. Development tools](https://www.drupal.
  - [blackfire.io](https://blackfire.io/) (performance testing tool)
 
 ### How to add new modules
+
  - Download the module ```drush dl [module]``` (it will be under /modules/[module])
 
  - Test it works (ui)
@@ -331,10 +334,12 @@ Development software (check also at [D.O. Development tools](https://www.drupal.
 | ---               | --- | --- | --- |
 | code              | from local branches | from dev | from stage (release) |
 | database          |from live | from live | - |
-| drupal config     |from live | from live | - |
+| drupal config (1) |from live | from live | - |
 | user files        |from live | from live | - |
 | system config     | dev | same to live | - |
 | drush etc aliases | common | common | none |
+
+(1) Not sure if config should move between environments...
 
 ### Create a pull request
 See above about VCS and git-flow.
@@ -382,7 +387,7 @@ See above about VCS and git-flow.
  - Fields machine name should follow this pattern for the machine name: ```field_[content_type_machine_name]_[short_name]```
  - Content types, Views and Custom Blocks should follow this pattern for the machine name: ```[machinename]```. That means you should use only letters and no special character or space. Machine names must be short but descriptive. Avoid very generic machine names or names that have been used already on the site even for another type of functionality (Views, Content types, Blocks, Plugins etc).
 
-> According to the above we are supposed to use Entityreference instead of Taxonomy Term reference.
+According to the above we are supposed to use Entityreference instead of Taxonomy Term reference.
 This is the rule except if there are cases that are met.
 
 These cases are:
