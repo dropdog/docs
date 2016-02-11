@@ -97,6 +97,15 @@ GUI Clients you can use. They are mostly used to see visual graphs of the commit
  - [PHP_CodeSniffer (phpcs)](http://www.squizlabs.com/php-codesniffer)
  - [PHP Code Beautifier and Fixer](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Fixing-Errors-Automatically#using-the-php-code-beautifier-and-fixer)
 
+### Drupal IDE
+
+**[phpstorm](https://confluence.jetbrains.com/display/PhpStorm/PhpStorm+Early+Access+Program)**
+
+ - [Drupal Development using PhpStorm](https://confluence.jetbrains.com/display/PhpStorm/Drupal+Development+using+PhpStorm)
+ - [Phpstorm - Preparing for Drupal Development in PhpStorm](https://www.jetbrains.com/phpstorm/help/preparing-for-drupal-development-in-phpstorm.html)
+ - [Phpstorm - Drupal-Specific Coding Assistance](https://www.jetbrains.com/phpstorm/help/drupal-specific-coding-assistance.html)
+ - [Setting up PhpStorm for Drupal's Coding Standards](https://www.drupal.org/node/1962108)
+
 ### Create an issue
 
 ### Create a pull request
