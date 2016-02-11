@@ -91,6 +91,12 @@ GUI Clients you can use. They are mostly used to see visual graphs of the commit
 
  - [MySQL Workbench ](https://www.mysql.com/products/workbench/)
 
+**Code review (for Drupal)**
+
+ - [coder](https://www.drupal.org/project/coder) (see the [installation instructions](http://cgit.drupalcode.org/coder/tree/README.md))
+ - [PHP_CodeSniffer (phpcs)](http://www.squizlabs.com/php-codesniffer)
+ - [PHP Code Beautifier and Fixer](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Fixing-Errors-Automatically#using-the-php-code-beautifier-and-fixer)
+
 ### Create an issue
 
 ### Create a pull request
