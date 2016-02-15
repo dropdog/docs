@@ -55,7 +55,7 @@ GUI Clients you can use. They are mostly used to see visual graphs of the commit
  - [drush pm-projectinfo](http://drushcommands.com/drush-8x/pm/pm-projectinfo/). Example: ```drush pmpi --format=table```
  - [drush pm-list](http://drushcommands.com/drush-8x/pm/pm-list/). Example: ```drush pml --type=module --format=table --no-core --status=enabled```
  - [drush pm-releases](http://drushcommands.com/drush-8x/pm/pm-releases/). Example: ```drush rl --format=table drupal```
- - [drush config-list](http://drushcommands.com/drush-8x/config/config-list/). Example: ```drush cli system --format=list```
+ - [drush config-list](http://drushcommands.com/drush-8x/config/config-list/). Example: ```drush cli system --format=list | grep article```
  - [drush config-get](http://drushcommands.com/drush-8x/config/config-get/). Example: ```drush cget system.site --format=yaml```
  - [drush field-info](http://drushcommands.com/drush-8x/field/field-info/) (Not ready at the moment. Please check this [issue](https://github.com/drush-ops/drush/issues/230))
  - [drush features-status](http://drushcommands.com/drush-8x/features/features-status/)
