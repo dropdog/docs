@@ -106,6 +106,33 @@ GUI Clients you can use. They are mostly used to see visual graphs of the commit
  - [Phpstorm - Drupal-Specific Coding Assistance](https://www.jetbrains.com/phpstorm/help/drupal-specific-coding-assistance.html)
  - [Setting up PhpStorm for Drupal's Coding Standards](https://www.drupal.org/node/1962108)
 
+### Drupal 8.x configuration system
+
+Here are some facts about the new [Drupal 8.x core configuration ("config.") system](https://www.drupal.org/documentation/administer/config).
+
+ - Config. is made to work for deployment not for packaging.
+ - All modules, themes and distributions (Drupal projects) have the same type of configuration (under <project_name>/config/* folders).
+ - Configuration files are of **yml** type.
+ - A config. file name should be unique.
+ - Config. is a group of key-value data.
+ - Configuration is decoupled from modules after installation. After installation the Drupal system "owns" the configuration.
+ - There are 2 types of config. storage: **Active (currently used from the website) and Staging**.
+ - We can have multiple config. stores (not only 2).
+ - Active storage is stored on the database by default.
+ - Active storage on the database is using UUIDs for each configuration setting.
+ - By default Drupal creates the Staging folder inside the public files folder.
+ - We can override the paths for the ASD storage (eg on ```settings.php```).
+ - All config. is tracked.
+ - Diff. is availble to inspect the changes.
+ - Config. is saved per content entity.
+ - Config. can be individually imported/exported.
+ - Config. synchronization requires all files to be present (missing config. files or settings will delete the configuration!)
+ - Core config. system is working for the same only Drupal installation.
+ - Exported config. files with UUID cannot be reused on another installation.
+ - Always use the Config. API to export/import config. Do not edit files or database entries manually.
+ - We can "override" a config. setting on the fly in the settings.php file.
+ - Useful modules that can export, import or manage config. are [features](https://www.drupal.org/project/features), [config_update](https://www.drupal.org/project/config_update), [config_devel](https://www.drupal.org/project/config_devel), [config_sync](https://www.drupal.org/project/config_sync), [config_tools](https://www.drupal.org/project/config_tools), [config_share](https://www.drupal.org/project/config_share).
+
 ### Create an issue
 
 ### Create a pull request
