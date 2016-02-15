@@ -401,6 +401,29 @@ These cases are:
 
 So, if 2 or more of the above cases are in need then we could discuss to use Taxonomy.
 
+Field description best practices.
+
+ - Write the description for the **end user** of the website not for the developers.
+ - First of all describe what is the field about.
+ - Write any special (technical) requirements (eg the minimum image dimensions).
+ - At the end show real examples of the value(s) that should be used.
+ - Let the user know if the field will not be published.
+ - Let the user ask for help if she does not understand what is the field about (eg link to a wiki).
+ - Keep the description pattern solid across the fields.
+ - Don't use ```<p>``` inside a description! Use only ```<br>``` to change lines.
+ - Don't write details about things that will be handled from Drupal on submission (eg that a field is required).
+ - Link (```href```) to another internal page should be relative, should contain a title and open in a new window.
+
+Example of an image field description.
+
+```
+This image will be used on the top of the page and it will have a 100% width.
+<br>Best image dimensions is width: 1200px, height: 260px.
+Larger or smaller images will be cropped (or stretched accordingly) to these dimensions.
+<br>You can see the usage of the image on the <a href="/internal/styleguides#hero-image" title="hero image real example" tagret="_blank">Styleguides</a>.
+<br>Get an image with such dimensions <a href="/path/to/1200_260/image" target="_blank" title="1200px*260px image">here</a>.
+```
+
 ### Building (Drupal) Views
 
  - Create one Views per Views Display except if it is a requirement. For example a Block Views and a Page Views for the same Content type should exist on different Views.
