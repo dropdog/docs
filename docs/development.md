@@ -176,6 +176,7 @@ Here are the principles of atomic commits:
  - Only commit when a block of work is complete. Don't commit half-done work.
  - Commit each layout change separately.
  - Joint commit for layout file, code behind file, and additional resources.
+ - **@TODO**: See if one commit per pull request makes sense. See an example at the [Symfony Docs](http://symfony.com/doc/current/cmf/contributing/commits.html).
 
 Here are the benefits:
 
