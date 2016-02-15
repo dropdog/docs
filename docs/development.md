@@ -397,6 +397,7 @@ These cases are:
  - We need tree structure of the references (taxonomy built-in option)
  - We need autocomplete (instant creation) fields when creating references
  - We need a related functionality that works only (or better) with Taxonomy (eg search_api)
+ - We don't need revisions, publishing options and other things that are possible only with Content Types.
 
 So, if 2 or more of the above cases are in need then we could discuss to use Taxonomy.
 
