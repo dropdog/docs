@@ -137,10 +137,11 @@ For example, all Content type forms (```node/add/*```) should have the same desi
 - We support IE8 and above browsers. We are not styling with that in mind but will deal with it when finished.
 - Override only the necessary css coming from each module. Do not copy and paste all the css of a module to the project Theme.
 - Be careful when overriding css/js as also as html structure especially if it is coming from Core. This may break core built-in functionality.
-- For the Admin pages we will use the default Core admin theme ([Seven](http://cgit.drupalcode.org/drupal/tree/core/themes/seven)) and we are just attaching js/css files to add some functionality. This will happen on a custom module.
+- For the Admin pages we will use the default Core admin theme ([Seven](http://cgit.drupalcode.org/drupal/tree/core/themes/seven)) and we are just attaching js/css files to add some functionality. This will happen on a custom module or a subtheme.
 - If you want to override a twig template get only from the source module that provides that. Eg if you want to override the [html.html.twig](http://cgit.drupalcode.org/drupal/tree/core/modules/system/templates/html.html.twig) file copy that from the [system](http://cgit.drupalcode.org/drupal/tree/core/modules/system) module.
 - Under the Theme folder create new subfolders to group files only if there is a significant amount of them and it makes sense to separate theme.
 Eg split the twig files to templates/system, templates/block etc using the pattern templates/[module] if there are 3 files of the system and 2 files of the block module. There should not exist any empty folder.
+- Avoid using the path alias (eg related classes) of a webpage to style the page. Path aliases are considered unstable and could change frequently.
 - If you need to extend/alter a class or another attribute prefer to use the [theme_name].theme
 - Do not use non semantic classes. Saying that we should not use classes such as "clearfix, container, full-width" etc if these classes are used to provide some css styling. Instead use [sass mixins](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#mixins) such as ```@full-width {width: 100%}```.
 - Avoid theming with elements except from the basic ones (p, h1 etc). Use classes instead. Example for this code ```<div><span class="my"></span></div>```:
