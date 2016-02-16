@@ -120,6 +120,7 @@ Here are some facts about the new [Drupal 8.x core configuration ("config.") sys
  - We can have multiple config. stores (not only 2).
  - Active storage is stored on the database by default.
  - Active storage on the database is using UUIDs for each configuration setting.
+ - The tables that are created on the database are ```cache_config, config```.
  - By default Drupal creates the Staging folder inside the public files folder.
  - We can override the paths for the ASD storage (eg on ```settings.php```).
  - All config. is tracked.

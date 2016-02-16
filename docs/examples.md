@@ -1,6 +1,6 @@
 ## Examples of best practices
 --------------------------------
-Include screenshots, code on GH and
+Include screenshots, code on GH and links to other resources.
 
 ### Content type
 
