@@ -41,6 +41,7 @@ CLI tools (shortcuts) you can (should) use:
 
 GUI Clients you can use. They are mostly used to see visual graphs of the commits, to solve conflicts, to browse repos etc.
  - [git-scm.com/downloads/guis](https://git-scm.com/downloads/guis)
+ - [tig, Text-mode interface for git](https://github.com/jonas/tig)
 
 ### Setup a development environment
 
