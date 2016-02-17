@@ -20,6 +20,11 @@ Use this distro: [drupal.org/project/multilingual_demo](https://www.drupal.org/p
 
 ### Play with git and VCS
 
+Git essentials and how git works:
+
+ - [Video: Essentials of Git: A Journey into the Sixth Dimension](https://www.youtube.com/watch?v=eVgQEL7x4Q4)
+ - [Video: Introduction to Git with Scott Chacon of GitHub](https://www.youtube.com/watch?v=ZDR433b0HJY)
+
 Useful git cheatsheets:
 
  - [Official git reference](https://git-scm.com/docs)
@@ -32,6 +37,7 @@ Interactive tools to learn git commands and terminology:
  - [Visual git cheat-sheet](http://ndpsoftware.com/git-cheatsheet.html)
  - [Learn git in 15 minutes](https://try.github.io)
  - [Learn git branching](http://pcottle.github.io/learnGitBranching/)
+ - [Git How To_ Guided Git Tutorial, step by step](https://githowto.com/)
 
 CLI tools (shortcuts) you can (should) use:
 
