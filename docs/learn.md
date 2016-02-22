@@ -122,7 +122,8 @@ GUI Clients you can use. They are mostly used to see visual graphs of the commit
 Here are some facts about the new [Drupal 8.x core configuration ("config.") system](https://www.drupal.org/documentation/administer/config).
 
  - Config. is made to work for deployment not for packaging.
- - All modules, themes and distributions (Drupal projects) have the same type of configuration (under <project_name>/config/* folders).
+ - All modules, themes and distributions (Drupal projects) have the same type of configuration (under <project_name>/config/* folder).
+ - ```<project_name>/config/install``` has the required config. ```<project_name>/config/optional``` has the optional config. (may not be installed).
  - Configuration files are of **yml** type.
  - A config. file name should be unique.
  - Config. is a group of key-value data.
@@ -133,8 +134,8 @@ Here are some facts about the new [Drupal 8.x core configuration ("config.") sys
  - Active storage on the database is using UUIDs for each configuration setting.
  - The tables that are created on the database are ```cache_config, config```.
  - By default Drupal creates the Staging folder inside the public files folder.
- - We can override the paths for the ASD storage (eg on ```settings.php```).
- - All config. is tracked.
+ - We can override the paths for the config. storage (usually on ```settings.php```).
+ - All config. is tracked by default.
  - Diff. is availble to inspect the changes.
  - Config. is saved per content entity.
  - Config. can be individually imported/exported.
