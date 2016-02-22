@@ -55,36 +55,40 @@ GUI Clients you can use. They are mostly used to see visual graphs of the commit
 
 **Drush**
 
- - [drush core-status](http://drushcommands.com/drush-8x/core/core-status/). Example: ```drush st --full```
- - [drush core-cli](http://drushcommands.com/drush-8x/core/core-cli/). Example: ```drush php```
- - [drush sql-cli](http://drushcommands.com/drush-8x/sql/sql-cli/). Example: ```drush sqlc```
- - [drush watchdog-show](http://drushcommands.com/drush-8x/watchdog/watchdog-show/). Example: ```drush ws --tail --extended```
- - [drush pm-projectinfo](http://drushcommands.com/drush-8x/pm/pm-projectinfo/). Example: ```drush pmpi --format=table```
- - [drush pm-list](http://drushcommands.com/drush-8x/pm/pm-list/). Example: ```drush pml --type=module --format=table --no-core --status=enabled```
- - [drush pm-releases](http://drushcommands.com/drush-8x/pm/pm-releases/). Example: ```drush rl --format=table drupal```
- - [drush config-list](http://drushcommands.com/drush-8x/config/config-list/). Example: ```drush cli system --format=list | grep article```
- - [drush config-get](http://drushcommands.com/drush-8x/config/config-get/). Example: ```drush cget system.site --format=yaml```
- - [drush field-info](http://drushcommands.com/drush-8x/field/field-info/) (Not ready at the moment. Please check this [issue](https://github.com/drush-ops/drush/issues/230))
- - [drush features-status](http://drushcommands.com/drush-8x/features/features-status/)
+ - [drush core-status](http://drushcommands.com/drush-8x/core/core-status/ 'Provides a birds-eye view of the current Drupal installation, if any.'). Example: ```drush st --full```
+ - [drush core-cli](http://drushcommands.com/drush-8x/core/core-cli/ 'Open an interactive shell on a Drupal site.'). Example: ```drush php```
+ - [drush sql-cli](http://drushcommands.com/drush-8x/sql/sql-cli/ 'Open a SQL command-line interface using Drupal's credentials.'). Example: ```drush sqlc```
+ - [drush watchdog-show](http://drushcommands.com/drush-8x/watchdog/watchdog-show/ 'Show watchdog messages.'). Example: ```drush ws --tail --extended```
+ - [drush pm-projectinfo](http://drushcommands.com/drush-8x/pm/pm-projectinfo/ 'Show a report of available projects and their extensions.'). Example: ```drush pmpi --format=table```
+ - [drush pm-list](http://drushcommands.com/drush-8x/pm/pm-list/, 'Show a list of available extensions (modules and themes).'). Example: ```drush pml --type=module --format=table --no-core --status=enabled```
+ - [drush pm-releases](http://drushcommands.com/drush-8x/pm/pm-releases/ 'Print release information for given projects.'). Example: ```drush rl --format=table drupal```
+ - [drush config-list](http://drushcommands.com/drush-8x/config/config-list/ 'List config names by prefix.'). Example: ```drush cli system --format=list | grep article```
+ - [drush config-get](http://drushcommands.com/drush-8x/config/config-get/ 'Display a config value, or a whole configuration object.'). Example: ```drush cget system.site --format=yaml```
+ - [drush field-info](http://drushcommands.com/drush-8x/field/field-info/ 'View information about fields, field_types, and widgets.') (Not ready at the moment. Please check this [issue](https://github.com/drush-ops/drush/issues/230))
+ - [drush features-status](http://drushcommands.com/drush-8x/features/features-status/ 'Display current Features settings.
+
+')
+ - [drush php-eval](http://drushcommands.com/drush-8x/core/php-eval/ 'Evaluate arbitrary php code after bootstrapping Drupal (if available).'). Example: ```drush ev 'node_access_rebuild()'```
+ - [drush entity-updates](http://drushcommands.com/drush-8x/core/entity-updates/ 'Apply pending entity schema updates.'). Example: ```drush entup```
 
 **Drupal Console** ([Drupal Console](https://drupalconsole.com/))
 
- - [drupal config:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/config-debug.html)
- - [drupal container:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/container-debug.html)
- - [drupal cron:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/cron-debug.html)
- - [drupal database:log:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-log-debug.html)
- - [drupal database:table:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-table-debug.html)
- - [drupal module:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/module-debug.html)
- - [drupal rest:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/rest-debug.html)
- - [drupal router:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/router-debug.html)
- - [drupal settings:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/settings-debug.html)
- - [drupal site:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/site-debug.html)
- - [drupal state:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/state-debug.html)
- - [drupal test:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/test-debug.html)
- - [drupal theme:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/theme-debug.html)
- - [drupal update:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/update-debug.html)
- - [drupal user:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/user-debug.html)
- - [drupal views:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/views-debug.html)
+ - [drupal config:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/config-debug.html 'Show the current configuration.')
+ - [drupal container:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/container-debug.html 'Displays current services for an application.')
+ - [drupal cron:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/cron-debug.html 'List of modules implementing a cron')
+ - [drupal database:log:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-log-debug.html ' Display current log events for the application.')
+ - [drupal database:table:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-table-debug.html 'Show all tables in a given database.')
+ - [drupal module:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/module-debug.html 'Display current modules available for application.')
+ - [drupal rest:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/rest-debug.html 'Display current rest resource for the application.')
+ - [drupal router:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/router-debug.html 'Displays current routes for the application.')
+ - [drupal settings:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/settings-debug.html 'List user Drupal Console settings.')
+ - [drupal site:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/site-debug.html 'List all known local and remote sites.')
+ - [drupal state:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/state-debug.html 'Show the current State keys.')
+ - [drupal test:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/test-debug.html 'List Test Units available for the application.')
+ - [drupal theme:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/theme-debug.html 'Displays current themes for the application.')
+ - [drupal update:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/update-debug.html 'Display current updates available for the application.')
+ - [drupal user:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/user-debug.html 'Displays current users for the application.')
+ - [drupal views:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/views-debug.html 'Display current views resources for the application.')
 
 **Drupal modules**
 
@@ -92,11 +96,11 @@ GUI Clients you can use. They are mostly used to see visual graphs of the commit
 
 **PHP debug and testing**
 
- - [blackfire.io](https://blackfire.io/). See [24 Days of Blackfire](https://blackfire.io/docs/24-days/index)
+ - [blackfire.io](https://blackfire.io/). See [24 Days of Blackfire](https://blackfire.io/docs/24-days/index).
 
 **Database debug**
 
- - [MySQL Workbench ](https://www.mysql.com/products/workbench/)
+ - [MySQL Workbench](https://www.mysql.com/products/workbench/)
 
 **Code review (for Drupal)**
 
