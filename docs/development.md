@@ -383,7 +383,7 @@ See above about VCS and git-flow.
  - Labels should not be displayed inline but blocks (```display: block```)
  - Fieldsets should be avoided. If not they should be open by default.
  - All fields require a Description to inform the user about their need.
- - No field should be shared. Never reuse fields!
+ - No field should be shared. Never reuse fields except if a field needs to be the same across content types (eg a SKU)!
  - Display view modes should be generic for all Content types and not specific (eg event_full).
  - Fields machine name should follow this pattern for the machine name: ```field_[content_type_machine_name]_[short_name]```
  - Content types, Views and Custom Blocks should follow this pattern for the machine name: ```[machinename]```. That means you should use only letters and no special character or space. Machine names must be short but descriptive. Avoid very generic machine names or names that have been used already on the site even for another type of functionality (Views, Content types, Blocks, Plugins etc).
@@ -433,7 +433,7 @@ Larger or smaller images will be cropped (or stretched accordingly) to these dim
  - Always use **Format > Show: Content** for the views row in order to move the row display control on Content types. If there is no available content type view mode create one.
  - Always package (with Features) the Views with the associated Entity type (eg Blog) except if there is a special use case of the Views.
  - It is required to give a meaningful (Administrative) name, description and tags to the Views. Do not leave the default values.
- - Add a tag to me same as your nickname, Github username etc on each Views you create.
+ - Add a tag to be the same as your nickname, Github username etc on each Views you create.
  - (~) Do not add a Menu for the Views through the Views settings page.
  - Always override default system views if they are to be used on the Distro.
  - Do not use Ajax by default for a View.
@@ -457,7 +457,8 @@ $form['parent_group']['parent_group_child'] = array();
 
 ### Building and packaging with Features
 
- - One Feature per Content type (CT). Each Content Type Feature (CTF) will package the CT fields, node form, related views, related blocks and user permissions.
+ - One Feature per Content type (CT)
+ - Each Content Type Feature (CTF) will package the CT fields, node form, related views, related blocks and user permissions
 
 ### Adding 3rd party libraries
 
