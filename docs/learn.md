@@ -65,9 +65,7 @@ GUI Clients you can use. They are mostly used to see visual graphs of the commit
  - [drush config-list](http://drushcommands.com/drush-8x/config/config-list/ 'List config names by prefix.'). Example: ```drush cli system --format=list | grep article```
  - [drush config-get](http://drushcommands.com/drush-8x/config/config-get/ 'Display a config value, or a whole configuration object.'). Example: ```drush cget system.site --format=yaml```
  - [drush field-info](http://drushcommands.com/drush-8x/field/field-info/ 'View information about fields, field_types, and widgets.') (Not ready at the moment. Please check this [issue](https://github.com/drush-ops/drush/issues/230))
- - [drush features-status](http://drushcommands.com/drush-8x/features/features-status/ 'Display current Features settings.
-
-')
+ - [drush features-status](http://drushcommands.com/drush-8x/features/features-status/ 'Display current Features settings.')
  - [drush php-eval](http://drushcommands.com/drush-8x/core/php-eval/ 'Evaluate arbitrary php code after bootstrapping Drupal (if available).'). Example: ```drush ev 'node_access_rebuild()'```
  - [drush entity-updates](http://drushcommands.com/drush-8x/core/entity-updates/ 'Apply pending entity schema updates.'). Example: ```drush entup```
 
