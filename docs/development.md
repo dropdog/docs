@@ -6,12 +6,13 @@ A lot of ideas for this page have been taken from the [KIT Feature Specification
 
 ### How to work
  - Assign a task to your own or pick an existing one.
- - Deliver new Feature/Functionality *fast*
- - Run tests (localy or on the test server)
- - Improve/Refract code
- - Recreate the Feature/Functionality
- - Push the code on the VCS (pull request)
- - If tests are green **move the new code** on the appropriate folder inside ```/profiles/[distro-name]```
+ - Deliver new Feature/Functionality *fast*.
+ - Run tests (localy or on the test server).
+ - Improve/Refract code.
+ - Recreate the Feature/Functionality.
+ - Test the new code locally on a clean installation.
+ - Push the new code on the VCS (pull request).
+ - If tests are green **move the new code** on the appropriate folder inside ```/profiles/[distro-name]```.
  - Update related issue and inform the other team members (if they need to).
  - Done!
 
@@ -387,6 +388,7 @@ See above about VCS and git-flow.
  - Display view modes should be generic for all Content types and not specific (eg event_full).
  - Fields machine name should follow this pattern for the machine name: ```field_[content_type_machine_name]_[short_name]```
  - Content types, Views and Custom Blocks should follow this pattern for the machine name: ```[machinename]```. That means you should use only letters and no special character or space. Machine names must be short but descriptive. Avoid very generic machine names or names that have been used already on the site even for another type of functionality (Views, Content types, Blocks, Plugins etc).
+ - Better do NOT use the default (core) Body field but a custom one for each CT. Body field may break our sass patterns and automated tests since it doesn't follow the machine name pattern described above.
 
 According to the above we are supposed to use Entityreference instead of Taxonomy Term reference.
 This is the rule except if there are cases that are met.
@@ -459,6 +461,8 @@ $form['parent_group']['parent_group_child'] = array();
 
  - One Feature per Content type (CT)
  - Each Content Type Feature (CTF) will package the CT fields, node form, related views, related blocks and user permissions
+ - Better add the "<Profile_name>" before each Feature name to avoid misconceptions with other modules and make it easier to search for a Feature.
+
 
 ### Adding 3rd party libraries
 
