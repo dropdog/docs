@@ -471,3 +471,17 @@ $form['parent_group']['parent_group_child'] = array();
  - Check the library popularity on its official repository. Avoid libraries with no traffic at all.
  - If multiple release sources (eg packagist, apt-get etc) are available for the library prefer Github which is most of the times the development source.
  - Always use a release of a library (if available) and not a generic branch.
+
+ ### Text formats and WYSIWYG editor
+
+The text formats that will be available are:
+
+ 1. plain_text
+ 2. html
+
+- Both 1 and 2 will be available for non-admin authenticated users (Authors, Managers etc).
+- Administrators should NOT use any extra format (full_html etc) that will not be available for Authors since all the Content must be editable by the portal Managers/Authors etc.
+- All users should NOT have the option to change between plain_text and html.
+- If we need extra html goodies (eg more allowed html tags) to be added on the **html** format then all the users with access to this format will need that too.
+- Insecure piece of content (eg php) should be added programmatically from code and not on the editor.
+- The WYSIWYG editor buttons should be the same as the HTML filters. Nothing more, nothing less.
