@@ -472,7 +472,7 @@ $form['parent_group']['parent_group_child'] = array();
  - If multiple release sources (eg packagist, apt-get etc) are available for the library prefer Github which is most of the times the development source.
  - Always use a release of a library (if available) and not a generic branch.
 
- ### Text formats and WYSIWYG editor
+### Text formats and WYSIWYG editor
 
 The text formats that will be available are:
 
