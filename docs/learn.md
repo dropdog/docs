@@ -142,6 +142,7 @@ Here are some facts about the new [Drupal 8.x core configuration ("config.") sys
  - Exported config. files with UUID cannot be reused on another installation.
  - Always use the Config. API to export/import config. Do not edit files or database entries manually.
  - We can "override" a config. setting on the fly in the settings.php file.
+ - We can see an overview (Report) of the config. changes at [example.com/admin/config/development/configuration/report](http://example.com/admin/config/development/configuration/report)
  - Useful modules that can export, import or manage config. are [features](https://www.drupal.org/project/features), [config_update](https://www.drupal.org/project/config_update), [config_devel](https://www.drupal.org/project/config_devel), [config_sync](https://www.drupal.org/project/config_sync), [config_tools](https://www.drupal.org/project/config_tools), [config_share](https://www.drupal.org/project/config_share).
 
 ### Create an issue
