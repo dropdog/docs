@@ -55,6 +55,9 @@ GUI Clients you can use. They are mostly used to see visual graphs of the commit
 
 **Drush**
 
+ - You can always **simulate a drush command** without executing by adding the `--simulate` argument at the end.
+ - You can debug a drush command using the `--verbose` and `--debug` arguments.
+
  - [drush core-status](http://drushcommands.com/drush-8x/core/core-status/ 'Provides a birds-eye view of the current Drupal installation, if any.'). Example: ```drush st --full```
  - [drush core-cli](http://drushcommands.com/drush-8x/core/core-cli/ 'Open an interactive shell on a Drupal site.'). Example: ```drush php```
  - [drush sql-cli](http://drushcommands.com/drush-8x/sql/sql-cli/ 'Open a SQL command-line interface using Drupal's credentials.'). Example: ```drush sqlc```
