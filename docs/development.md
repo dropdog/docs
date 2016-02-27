@@ -90,6 +90,7 @@ We are using the default **[git-flow](http://nvie.com/posts/a-successful-git-bra
 
  - See the [git-flow cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/) for fast learning.
  - See the [command line manual](https://github.com/nvie/gitflow/wiki/Command-Line-Arguments)
+ - See the [Comparison of using `git flow` commands VS raw `git` commands](https://gist.github.com/JamesMGreene/cdd0ac49f90c987e45ac)
 
 **git-flow commands - short diagram**
 
@@ -108,6 +109,7 @@ We are using the default **[git-flow](http://nvie.com/posts/a-successful-git-bra
  - After each successful release there will be a new **make file** from existing files/configuration.
  - Modules that are used for development (devel, masquarade etc) will be commited to Github but **they will not be imported to the make file** except if they are requirements for any of the modules of the distribution.
  - If you need a publish a branch that should NOT be merged use this naming pattern ```no-merge-[branch_name]```.
+ - If you want to see what are the raw git commands running after a git-flow command add the `--showcommands` argument at the end.
 
 ### VCS - Git commit best practices
 [Git Commit](https://git-scm.com/docs/git-commit) messages are so important for a good team collaboration as also as for a sustainable development workflow.
