@@ -161,6 +161,7 @@ like this:
 Resolves: #123
 See also: #456, #789
 ```
+
 ### VCS - Atomic commits
 
 See more at [seesparkbox - Atomic Commits with Git](http://seesparkbox.com/foundry/atomic_commits_with_git), [freshconsulting - Developer Tip: Keep Your Commits “Atomic”](http://www.freshconsulting.com/atomic-commits/).
@@ -243,6 +244,14 @@ $ git commit
 # When ready push.
 
 ```
+
+**Github specific autolinked-references**
+
+See more at [Github docs - Autolinked references and urls](https://help.github.com/articles/autolinked-references-and-urls).
+
+ - If you write `#26` on a commit message Github will look for Issue No 26 or Pull Request No 26 and will create a link to it if exists.
+ - You can **refer to commits** using the commit hash (usually the first 7 characters are enough). So if you write on commit message `9889c6e` Github will make a link to that commit.
+ - Links that are generated are **bidirectional** (for example, if you refer to a Pull Request from an Issue this reference will also appear on the Pull Request page)
 
 ### Applying patches
 
