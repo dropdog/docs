@@ -10,6 +10,7 @@
 - Set ```cookie_domain``` to allow logged in users to move between multidomains.
 - Use ```local.settings.php``` and ```development.services.yml``` for custom development settings. Do not enable this on live site!
 - Move ```config*``` files out of sites/* folder.
+- Use `$settings['file_public_base_url']` variable to have the public files on external folder.
 
 ### On ```services.yml```
 
