@@ -18,6 +18,11 @@ A lot of ideas for this page have been taken from the [KIT Feature Specification
 
  - Always document what you have done. On Code, on the Feature, on the Commit, on these Docs!
 
+> If you add a new module dependency and you don't want to recreate the distribution then follow these steps:
+
+  1. Enable the new project(s) (eg module) on your installation.
+  2. Commit and publish the files with the dependencies using git.
+
 ### Project folders and structure
  - We are only tracking the ```/profiles/[distro-name]``` folder! Not any other files.
  - The distribution folder will/may have this structure (see at [github.com/dropdog/docs/tree/master/docs/structure/profile](https://github.com/dropdog/docs/tree/master/docs/structure/profile))
