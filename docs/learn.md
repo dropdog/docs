@@ -49,6 +49,12 @@ GUI Clients you can use. They are mostly used to see visual graphs of the commit
  - [git-scm.com/downloads/guis](https://git-scm.com/downloads/guis)
  - [tig, Text-mode interface for git](https://github.com/jonas/tig)
 
+Rewriting git history
+ - [Git Tools - Rewriting History](http://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
+
+![How to handle a git mess](http://justinhileman.info/article/git-pretty/git-pretty.png 'How to handle a git mess')
+[Download as pdf](http://justinhileman.info/article/git-pretty/git-pretty.pdf)
+
 ### Setup a development environment
 
 ### Debug Drupal

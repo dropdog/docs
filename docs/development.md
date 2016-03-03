@@ -151,7 +151,7 @@ and `rebase` can get confused if you run the two together.
 
 Explain the problem that this commit is solving. Focus on why you
 are making this change as opposed to how (the code explains that).
-Are there side effects or other unintuitive consequenses of this
+Are there side effects or other unintuitive consequences of this
 change? Here's the place to explain them.
 
 Further paragraphs come after blank lines.
@@ -206,7 +206,7 @@ Examples of atomic commits:
 
 In practice in order to open the editor to write the commit do not use the ```-a``` flag because it adds all the modified files to the commit!
 
-A worfklow to add only specific files on a commit:
+A workflow to add only specific files on a commit:
 
 ```git
 $ git status
