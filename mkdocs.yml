@@ -14,6 +14,7 @@ pages:
 - Development: 'development.md'
 - Theming: 'theming.md'
 - Tests: 'tests.md'
+- Reviews: 'review/index.md'
 - Reviews - Entity: 'review/entity.md'
 - Reviews - Views: 'review/views.md'
 - Scripts: 'scripts.md'
