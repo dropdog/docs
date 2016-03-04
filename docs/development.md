@@ -383,7 +383,7 @@ See above about VCS and git-flow.
 
 **Restoring Backups**
 
- - Always take a **backup of current site** (database dump, database from backup_migrate, public/private files) before restoring a backup!
+ - Always take a **backup of current site** (database dump, database from backup_migrate or backup_db, public/private files) before restoring a backup!
  - Never restore on the live site before testing the backups on a copy of the live site!
  - If a backup causes errors add an issue on GH and explain/ask for help.
 
