@@ -21,3 +21,13 @@ Read the docs online: [dropdog.readthedocs.org](http://dropdog.readthedocs.org/)
 - [Examples](examples.md)
 - [Development thoughts](thoughts.md)
 - [Terminology](terminology)
+
+## License
+
+```
+Copyright (c) 2016 by Hostdog.gr.
+
+This material may be distributed only subject to the terms and conditions set
+forth in the Open Publication License, v1.0 or later (the latest version
+  is presently available at http://www.opencontent.org/openpub/).
+```
