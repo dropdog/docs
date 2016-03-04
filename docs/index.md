@@ -1,3 +1,5 @@
+# Dropdog Drupal 8.x distribution
+
 [![Documentation Status](https://readthedocs.org/projects/dropdog/badge/?version=master)](http://dropdog.readthedocs.org/?badge=master)
 
 Documentation for Drupal Developers/Themers etc for the **DropDog Drupal 8.x** distribution.
@@ -8,7 +10,7 @@ Read the docs online: [dropdog.readthedocs.org](http://dropdog.readthedocs.org/)
 - Edit the Docs on Github: [github.com/dropdog/docs](https://github.com/dropdog/docs)
 - Distro official url: [dropdog.github.io/website](http://dropdog.github.io/website/)
 
-**Table of Contents**
+## Table of Contents
 
 - [General](general)
 - [Learn](learn)
@@ -17,7 +19,8 @@ Read the docs online: [dropdog.readthedocs.org](http://dropdog.readthedocs.org/)
 - [Development](development)
 - [Theming](theming)
 - [Tests](tests)
-- [Reviews](review)
+- [Reviews - Entity](review/entity)
+- [Reviews - Views](review/views)
 - [Scripts](scripts)
 - [Development thoughts](thoughts)
 - [Terminology](terminology)

@@ -7,16 +7,18 @@ markdown_extensions:
 
 pages:
 - Home: 'index.md'
-- General: 'general.md'
-- Learn: 'learn.md'
-- Parameters: 'parameters.md'
-- Infrastructure: 'infrastructure.md'
-- Development: 'development.md'
-- Theming: 'theming.md'
-- Tests: 'tests.md'
+- General:
+    - General: 'general.md'
+- Development:
+    - Parameters: 'parameters.md'
+    - Infrastructure: 'infrastructure.md'
+    - Development: 'development.md'
+    - Theming: 'theming.md'
+    - Tests: 'tests.md'
+    - Development thoughts: 'thoughts.md'
 - Reviews:
     - 'Entity Review': 'review/entity.md'
     - 'Views Review': 'review/views.md'
 - Scripts: 'scripts.md'
-- Development thoughts: 'thoughts.md'
+- Learn: 'learn.md'
 - Terminology: 'terminology.md'
