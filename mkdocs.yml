@@ -16,6 +16,5 @@ pages:
 - Tests: 'tests.md'
 - Reviews: 'review/entity.md'
 - Scripts: 'scripts.md'
-- Examples: 'examples.md'
 - Development thoughts: 'thoughts.md'
 - Terminology: 'terminology.md'

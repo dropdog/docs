@@ -55,6 +55,8 @@ Rewriting git history
 ![How to handle a git mess](http://justinhileman.info/article/git-pretty/git-pretty.png 'How to handle a git mess')
 [Download as pdf](http://justinhileman.info/article/git-pretty/git-pretty.pdf)
 
+### Git-flow commands scriptplay
+
 ### Setup a development environment
 
 ### Debug Drupal
@@ -154,15 +156,25 @@ Here are some facts about the new [Drupal 8.x core configuration ("config.") sys
  - We can see an overview (Report) of the config. changes at [example.com/admin/config/development/configuration/report](http://example.com/admin/config/development/configuration/report)
  - Useful modules that can export, import or manage config. are [features](https://www.drupal.org/project/features), [config_update](https://www.drupal.org/project/config_update), [config_devel](https://www.drupal.org/project/config_devel), [config_sync](https://www.drupal.org/project/config_sync), [config_tools](https://www.drupal.org/project/config_tools), [config_share](https://www.drupal.org/project/config_share).
 
-### Create an issue
+### Create an issue on Github
 
 ### Create a pull request
-
-### Contribute to documentation
 
 ### Get familiar with the new API (+API docs)
 
 ### Useful browser extensions and plugins
+
+### Run tests
+
+### OOP - how to
+ See [Drupal 8 - Background & Prerequisites](https://www.drupal.org/getting-started-d8-bkg-prereq)
+
+ Also [oop_examples](https://www.drupal.org/project/oop_examples)
+
+ - Definitions (Namespaces, Dependency Injection, Annotations, Plugin, Factory, Interface etc)
+ - Best practices
+ - Examples
+ - IDE in the rescue
 
 ### Other
 

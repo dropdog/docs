@@ -19,7 +19,6 @@ Read the docs online: [dropdog.readthedocs.org](http://dropdog.readthedocs.org/)
 - [Tests](tests)
 - [Reviews](review/entity)
 - [Scripts](scripts)
-- [Examples](examples)
 - [Development thoughts](thoughts.md)
 - [Terminology](terminology)
 
