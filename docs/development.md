@@ -354,7 +354,7 @@ Development software (check also at [D.O. Development tools](https://www.drupal.
 | database          |from live | from live | - |
 | drupal config (1) |from live | from live | - |
 | user files        |from live | from live | - |
-| system config     | dev | same to live | - |
+| system config     | dev | same as live | - |
 | drush etc aliases | common | common | none |
 
 (1) Not sure if config should move between environments...
@@ -366,7 +366,7 @@ See above about VCS and git-flow.
 
 **Database**
 
- - For development use the [backup_migrate](https://www.drupal.org/project/backup_migrate) module (truncate all caches from the cache_* tables for the default backup profile).
+ - For development use the [backup_migrate](https://www.drupal.org/project/backup_migrate) or [backup_db](https://www.drupal.org/project/backup_db) module (truncate all caches from the cache_* tables for the default backup profile).
  - Save database regularly backups with a cron job.
  - For the live site will need **in addition** to the backup_migrate backups full database backups using ```mysqldump``` (see [drush sql-dump](http://drushcommands.com/drush-8x/sql/sql-dump/) command).
  - Backups should be saved on another server (different from the Drupal installation).
