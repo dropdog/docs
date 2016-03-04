@@ -30,5 +30,6 @@ into the issue and treat the checklist accordingly.
  ----------
 
  **B. Extended checklist:**
+
  1. [ ] DFeature contains the related DViews
  2. [ ] Entity type contains Tests
