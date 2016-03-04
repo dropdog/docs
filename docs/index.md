@@ -1,4 +1,4 @@
-# Dropdog Drupal 8.x distribution
+## About and project links
 
 [![Documentation Status](https://readthedocs.org/projects/dropdog/badge/?version=master)](http://dropdog.readthedocs.org/?badge=master)
 
@@ -25,7 +25,7 @@ Read the docs online: [dropdog.readthedocs.org](http://dropdog.readthedocs.org/)
 - [Development thoughts](thoughts)
 - [Terminology](terminology)
 
-## License
+## Documentation License
 
 ```
 Copyright (c) 2016 by Hostdog.eu.
@@ -34,3 +34,5 @@ This material may be distributed only subject to the terms and conditions set
 forth in the Open Publication License, v1.0 or later (the latest version
 is presently available at http://www.opencontent.org/openpub/).
 ```
+
+For code license see the [related section](general#license).

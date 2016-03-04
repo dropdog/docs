@@ -40,8 +40,7 @@ Documentation source: [github.com/dropdog/docs](https://github.com/dropdog/docs)
 
 ## History
 
-## Licence
+## License
+Code is available under [GNU-GPL v2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)
 
-[GPL - GNU General Public Licence](http://www.gnu.org/licenses/gpl.html)
-
-For examples and other code please refer to each project for the licence.
+For examples and other code please refer to each project for the license.
