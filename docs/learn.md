@@ -20,40 +20,79 @@ Use this distro: [drupal.org/project/multilingual_demo](https://www.drupal.org/p
 
 ### Play with git and VCS
 
-Git essentials and how git works:
+#### Git essentials and how git works:
 
  - [Video: Essentials of Git: A Journey into the Sixth Dimension](https://www.youtube.com/watch?v=eVgQEL7x4Q4)
  - [Video: Introduction to Git with Scott Chacon of GitHub](https://www.youtube.com/watch?v=ZDR433b0HJY)
 
-Useful git cheatsheets:
+#### Useful git cheatsheets:
 
  - [Official git reference](https://git-scm.com/docs)
  - [training.github.com, github-git-cheat-sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
  - [git-tower, git-cheat-sheet](https://www.git-tower.com/blog/git-cheat-sheet/)
  - [Advanced git cheat-sheet](http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf)
 
-Interactive tools to learn git commands and terminology:
+#### Interactive tools to learn git commands and terminology:
 
  - [Visual git cheat-sheet](http://ndpsoftware.com/git-cheatsheet.html)
  - [Learn git in 15 minutes](https://try.github.io)
  - [Learn git branching](http://pcottle.github.io/learnGitBranching/)
  - [Git How To_ Guided Git Tutorial, step by step](https://githowto.com/)
 
-CLI tools (shortcuts) you can (should) use:
+#### CLI tools (shortcuts) you can (should) use:
 
  - [git-flow](https://github.com/nvie/gitflow). A method as also as a collection of commands for successful git branching and development.
  - (Optional) [git hub](https://hub.github.com/). A tool to help create pull requests, compare commits, view issues and make your life on GH better.
  - (Optional) [git extras](https://github.com/tj/git-extras). Some useful git aliases/wrappers for humans (summary, undo, ignore, changelog etc)!
 
-GUI Clients you can use. They are mostly used to see visual graphs of the commits, to solve conflicts, to browse repos etc.
+#### GUI Clients you can use. They are mostly used to see visual graphs of the commits, to solve conflicts, to browse repos etc.
  - [git-scm.com/downloads/guis](https://git-scm.com/downloads/guis)
  - [tig, Text-mode interface for git](https://github.com/jonas/tig)
 
-Rewriting git history
+#### Rewriting git history
  - [Git Tools - Rewriting History](http://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
 
 ![How to handle a git mess](http://justinhileman.info/article/git-pretty/git-pretty.png 'How to handle a git mess')
 [Download as pdf](http://justinhileman.info/article/git-pretty/git-pretty.pdf)
+
+#### Configure git
+See the [online docs](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration). Here are some basic information.
+
+ - Enable [rerere](https://git-scm.com/blog/2010/03/08/rerere.html)
+ - Do not let git to auto-convert CRLF line endings into LF (`autocrlf`)
+ - Do not track filemode
+ - Use the `git push` with `simple` option
+
+Example of a global `.gitconfig` file (part of):
+
+```ini
+[core]
+  autocrlf = false
+  safecrlf = false
+  ignorecase = false
+  editor = /usr/bin/subl -n -w
+	filemode = false
+
+[push]
+  default = simple
+
+[branch]
+  autosetuprebase = always
+
+[diff]
+  renames = copies
+
+[color]
+  ui = true
+
+[rerere]
+  enabled = true
+  autoupdate = true
+
+[merge]
+  tool = <YOUR_GIT_DIFF_GUI>
+```
+
 
 ### Git-flow commands scriptplay
 
