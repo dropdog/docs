@@ -51,6 +51,7 @@ Use this distro: [drupal.org/project/multilingual_demo](https://www.drupal.org/p
 
 #### Rewriting git history
  - [Git Tools - Rewriting History](http://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
+ - [Git: Revert a Commit Already Pushed to a Remote Repository](http://christoph.ruegg.name/blog/git-howto-revert-a-commit-already-pushed-to-a-remote-reposit.html)
 
 ![How to handle a git mess](http://justinhileman.info/article/git-pretty/git-pretty.png 'How to handle a git mess')
 [Download as pdf](http://justinhileman.info/article/git-pretty/git-pretty.pdf)
