@@ -269,7 +269,9 @@ See also [D.O. - Applying patches](https://www.drupal.org/patch/apply).
  - Apply the patch ```patch -p1 < [patch_file]```
  - Check if patch works (running tests and/or with the UI)
  - If patch works include it with the commit!
+
  - Revert a patch with ```patch -p1 -R < path/file.patch```
+ - Create a patch from a diff: ```git diff <COMMITISH-FROM> <COMMITISH-FROM> > <PATCH_NAME>.suffix``` (example: ```git diff 04a2 b36f > patchfile.patch```)
 
 ### Installing the distribution
  - Using **drush** only (make, site-install, db sync, file dl etc. Check ```drush make --help```)
