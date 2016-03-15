@@ -35,3 +35,6 @@ into the issue and treat the checklist accordingly.
 
  1. [ ] DViews has useful Administrative comments
  2. [ ] DViews contains Tests
+ 3. [ ] DFeature has no dependency to itself
+ 4. [ ] DFeature configuration files exist in place
+ 5. [ ] Additional README.txt with how to information has been added (if needed)
