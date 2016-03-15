@@ -70,6 +70,7 @@ Tasks are also issues but with a different label.
  - First search, then submit an issue.
  - Create the issue only on Github.
  - There must be only one unique issue and no duplicates.
+ - If an issue refers to an old issue reopen it and don't create a new issue.
 
  - On the issue you must include
   - steps to reproduce the issue
@@ -115,6 +116,7 @@ We are using the default **[git-flow](http://nvie.com/posts/a-successful-git-bra
  - Modules that are used for development (devel, masquarade etc) will be commited to Github but **they will not be imported to the make file** except if they are requirements for any of the modules of the distribution.
  - If you need a publish a branch that should NOT be merged use this naming pattern ```no-merge-[branch_name]```.
  - If you want to see what are the raw git commands running after a git-flow command add the `--showcommands` argument at the end.
+ - Avoid pushing online too many similar branches (eg branches of Content types). First find the working formula for a type of branch and then copy this successful methodology to other. Event then there is no need to create a dozen of branches online.
 
 ### VCS - Git commit best practices
 [Git Commit](https://git-scm.com/docs/git-commit) messages are so important for a good team collaboration as also as for a sustainable development workflow.
@@ -404,7 +406,8 @@ See above about VCS and git-flow.
  - Fieldsets should be avoided. If not they should be open by default.
  - All fields require a Description to inform the user about their need.
  - No field should be shared. Never reuse fields except if a field needs to be the same across content types (eg a SKU)!
- - Display view modes should be generic for all Content types and not specific (eg event_full).
+ - Display view modes should be generic for all Content types and not specific (eg event_full)
+ - Machine names of Content types and fields should disallow name conflicts (eg ```nameone``` and ```nameoneplus``` may cause issues)
  - Fields machine name should follow this pattern for the machine name: ```field_[content_type_machine_name]_[short_name]```
  - Content types, Views and Custom Blocks should follow this pattern for the machine name: ```[machinename]```. That means you should use only letters and no special character or space. Machine names must be short but descriptive. Avoid very generic machine names or names that have been used already on the site even for another type of functionality (Views, Content types, Blocks, Plugins etc).
  - Better do NOT use the default (core) Body field but a custom one for each CT. Body field may break our sass patterns and automated tests since it doesn't follow the machine name pattern described above.
@@ -476,10 +479,14 @@ $form['parent_group']['parent_group_child'] = array();
 ```
  - Always build such pages with Drupal Console generate function to eliminate errors.
 
-### Building and packaging with Features
+### Building and packaging with (Drupal) Features
 
- - One Feature per Content type (CT)
- - Each Content Type Feature (CTF) will package the CT fields, node form, related views, related blocks and user permissions
+ - One Feature per Entity type (Content, Taxonomy, User etc)
+ - Enable "Allow conflicts" (checkbox on the UI).
+ - After exporting a DFeature check that all the **configuration files** exist in place.
+ - After exporting a DFeature check that there is **no dependency to itself**.
+ - Use the current installation <Profile_machine_name> as Bundle name. Do not add DFeatures with the Default Features Bundle.
+ - Each Content Type Feature (CTF) will package the CT fields, node form, related views, related blocks and user permissions.
  - Better add the "<Profile_name>" before each Feature name to avoid misconceptions with other modules and make it easier to search for a Feature.
 
 
@@ -490,6 +497,7 @@ $form['parent_group']['parent_group_child'] = array();
  - Check the library popularity on its official repository. Avoid libraries with no traffic at all.
  - If multiple release sources (eg packagist, apt-get etc) are available for the library prefer Github which is most of the times the development source.
  - Always use a release of a library (if available) and not a generic branch.
+ - If a library needs to be loaded with composer add it without the helper module [composer_manager](https://www.drupal.org/project/composer_manager) but with core composer.
 
 ### Text formats and WYSIWYG editor
 
