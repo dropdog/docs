@@ -6,6 +6,10 @@ In order to use this checklist on an issue
 [copy the source code](https://raw.githubusercontent.com/dropdog/docs/master/docs/review/entity.md)
 into the issue and treat the checklist accordingly.
 
+**IMPORTANT**: If one or more checkboxes of the list do not apply
+(eg there is no need for **Multilingual Settings**) please REMOVE the related
+checkbox to avoid misunderstand.
+
 **A. Basic checklist:**
 
  1. [ ] Commits are atomic
