@@ -449,6 +449,17 @@ Larger or smaller images will be cropped (or stretched accordingly) to these dim
 <br>Get an image with such dimensions <a href="/path/to/1200_260/image" target="_blank" title="1200px*260px image">here</a>.
 ```
 
+### Building Custom Blocks (using Drupal block_content module)
+
+ - Treat machine_name, fields, view modes etc like any other Content type (see above)
+ - On the machine_name do NOT add the `block` prefix (Drupal will add this anyway before the machine_name)
+ - Do NOT add the <profile_name> anywhere in the machine_name
+ - On the machine_name add a basic, generic name that will describe the block **functionality**. Eg `banner`, `list`, `header` etc
+ - On the machine_name do NOT add any region/theme/placement etc related info
+ - Make the machine_name following the atomic design patterns (see above)
+
+Examples of a machine_name of a custom Block type: ```largebanner```, ```productlist``` etc.
+
 ### Building (Drupal) Views
 
  - Create one Views per Views Display except if it is a requirement. For example a Block Views and a Page Views for the same Content type should exist on different Views.
