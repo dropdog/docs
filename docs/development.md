@@ -510,6 +510,40 @@ $form['parent_group']['parent_group_child'] = array();
  - Always use a release of a library (if available) and not a generic branch.
  - If a library needs to be loaded with composer add it without the helper module [composer_manager](https://www.drupal.org/project/composer_manager) but with core composer.
 
+### Using Docker
+
+#### Docker images
+We use Docker to create private or public images. Images can be of several types such as:
+
+ - A generic public LAMP image ready to install any Drupal 8.x website (see [image dropdog/docker](https://hub.docker.com/r/dropdog/docker/))
+ - A specific private image that installs Drupal 8.x with the current profile (using image `dropdog/docker`)
+ - A specific private image to run tests (using the above image as base)
+
+#### How to use Docker for development
+See the related chapter at [learn#docker](learn#docker) file.
+
+### Examples of using Docker
+
+```
+// Create a new development folder.
+mkdir /var/www/html/[NEW_FOLDER]
+
+// Clone Drupal installation files.
+git clone [GIT_REPOSITORY] --branch [GIT_BRANCH] /var/www/html/[NEW_FOLDER]
+
+// Login to Docker hub (hub.docker.com), may need sudo.
+docker login (may need sudo)
+
+// Pull private Docker image, may need sudo
+docker pull [PRIVATE_DOCKER_IMAGE_REPO]:[tag]
+
+// Run of a new Docker container with volumes
+// The web ui can be found at http://localhost:8090
+docker run -d -p 8090:80 -p 8022:22 -v /var/www/html/[NEW_FOLDER]/profiles:/var/www/profiles -t [PRIVATE_DOCKER_IMAGE_REPO]:[tag]
+...
+
+```
+
 ### Text formats and WYSIWYG editor
 
 The text formats that will be available are:

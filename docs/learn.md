@@ -216,6 +216,19 @@ Here are some facts about the new [Drupal 8.x core configuration ("config.") sys
  - Examples
  - IDE in the rescue
 
+### Docker
+[Docker](https://www.docker.com/) allows you to package an application with all of its
+dependencies into a standardized unit for software development.
+
+You can use Docker with many ways while developing. Some common scenario usages are:
+
+ - Test git branches and/or functionality (using the UI or the Drupal testing system)
+ - Take backups of the system (eg get the database of the build)
+ - Automate Continuous Integration (CI)
+ - Automate Continuous Delivery (CD)
+ - Reproduce issues and errors and share them with the team
+ - Test Drupal core or contrib modules updates
+
 ### Other
 
-(Vagrant/Otto, Docker, Continuous Integration ...)
+(Vagrant, Otto, Jenkins, Continuous Integration ...)
