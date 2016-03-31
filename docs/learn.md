@@ -119,6 +119,12 @@ Git GUI clients are mostly used to see visual graphs of the commits, to solve co
 
 #### Rewriting git history
 
+Many times, when working with Git, you may want to **revise your commit history** for some reason.
+
+This can involve changing the order of the commits, changing messages or modifying files in a commit, squashing together or splitting apart commits, or removing commits entirely – all before you share your work with others.
+
+Rewriting git history may cause unpredictable issues and really big headaches so here are some useful manuals you should read before going on as also as a decision diagram that helps you decide what to do.
+
  - [Git Tools - Rewriting History](http://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
  - [Git: Revert a Commit Already Pushed to a Remote Repository](http://christoph.ruegg.name/blog/git-howto-revert-a-commit-already-pushed-to-a-remote-reposit.html)
 
