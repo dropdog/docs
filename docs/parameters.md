@@ -17,7 +17,7 @@ Is the functionality working well with a multidomain installation with the same 
 
 ### One (only) Database
 
-Is the functionality working well if we have one Datbase?
+Is the functionality working well if we have one Database?
 
 ### Drupal 8.x
 
