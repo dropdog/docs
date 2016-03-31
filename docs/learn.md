@@ -9,8 +9,6 @@
 
 ### Using Composer
 
-### Using Drupal Console
-
 ### Building with Features
 
 ### Create a multilingual website
@@ -122,6 +120,7 @@ Example of a global `.gitconfig` file (part of):
 
 **Drupal Console** ([Drupal Console](https://drupalconsole.com/))
 
+ - [drupal site:mode dev](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/site-mode.html 'Switch system performance configuration, dev|prod')
  - [drupal config:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/config-debug.html 'Show the current configuration.')
  - [drupal container:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/container-debug.html 'Displays current services for an application.')
  - [drupal cron:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/cron-debug.html 'List of modules implementing a cron')
