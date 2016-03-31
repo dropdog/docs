@@ -8,6 +8,73 @@
  - [Drupal 8 Configuration schema](http://hojtsy.hu/files/ConfigSchemaCheatSheet1.5.pdf)
 
 ### Using Composer
+Drupal 8.x supports (and promotes) usage of [Composer](https://getcomposer.org/).
+Core and contrib projects may require external libraries that can be attached to
+the Drupal app using composer.
+
+Composer uses a specific file named [composer.json](http://cgit.drupalcode.org/drupal/tree/composer.json)
+that keeps the configuration in one place as also as [composer.lock](http://cgit.drupalcode.org/drupal/tree/composer.lock)
+that locks the dependencies of a project to a known state (specific versions).
+
+Composer can install libraries from [Packagist - The PHP Package Repository](https://packagist.org/)
+as also as any other package hub that supports composer.
+
+  - Learn more about composer commands [online](https://github.com/composer/composer/blob/master/doc/03-cli.md) or by running:
+
+```
+// Show available composer commands
+composer list
+```
+
+ - Common composer commands for a PHP project are:
+
+```
+// Creates a basic composer.json file in current directory.
+composer init
+
+// Installs the project dependencies from the composer.lock file if present,
+// or falls back on the composer.json.
+composer install
+
+// Adds required packages to your composer.json and installs them.
+composer require
+
+// Updates your dependencies to the latest version according to composer.json,
+and updates the composer.lock file.
+composer update
+
+// Removes a package from the require or require-dev.
+composer remove
+
+// Dumps the autoloader
+composer dump-autoload
+
+// Create new project from a package into given directory.
+composer create-project
+```
+
+  - Example of adding requirements of the [address](https://www.drupal.org/project/address) module:
+
+```
+// Go to the Drupal root
+cd <APP_ROOT>
+
+// Add the requirements abd update composer.json
+composer require commerceguys/intl
+composer require commerceguys/addressing
+composer require commerceguys/zone
+
+```
+
+  - Example of a Drupal build made by composer:
+
+```
+// Set the source of Drupal packages
+composer config repositories.drupal composer https://packagist.drupal-composer.org
+
+// Download drupalcommerce/project-base
+composer create-project drupalcommerce/project-base <PROJECT_FOLDER> --stability dev
+```
 
 ### Building with Features
 
@@ -41,13 +108,17 @@ Use this distro: [drupal.org/project/multilingual_demo](https://www.drupal.org/p
 
  - [git-flow](https://github.com/nvie/gitflow). A method as also as a collection of commands for successful git branching and development.
  - (Optional) [git hub](https://hub.github.com/). A tool to help create pull requests, compare commits, view issues and make your life on GH better.
- - (Optional) [git extras](https://github.com/tj/git-extras). Some useful git aliases/wrappers for humans (summary, undo, ignore, changelog etc)!
+ - (Optional) [git extras](https://github.com/tj/git-extras). Some useful git aliases/wrappers for humans (summary, undo, ignore, changelog etc).
 
-#### GUI Clients you can use. They are mostly used to see visual graphs of the commits, to solve conflicts, to browse repos etc.
+#### GUI Clients you can use.
+
+Git GUI clients are mostly used to see visual graphs of the commits, to solve conflicts, to browse repos etc.
+
  - [git-scm.com/downloads/guis](https://git-scm.com/downloads/guis)
  - [tig, Text-mode interface for git](https://github.com/jonas/tig)
 
 #### Rewriting git history
+
  - [Git Tools - Rewriting History](http://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
  - [Git: Revert a Commit Already Pushed to a Remote Repository](http://christoph.ruegg.name/blog/git-howto-revert-a-commit-already-pushed-to-a-remote-reposit.html)
 
