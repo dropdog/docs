@@ -364,29 +364,15 @@ Development software (check also at [D.O. Development tools](https://www.drupal.
 
 (1) Not sure if config should move between environments...
 
-### Import export Drupal site Configuration
+### Import/export Drupal site Configuration
 
 This is referred to the new Drupal 8.x Configuration Management (CM) API.
 Please check the details of the CM at [learn/#drupal-8x-configuration-system](learn/#drupal-8x-configuration-system).
 
-1. Install Drupal 8.x. We will call this site "Live."
-2. Make a full copy of this site (code, database, public/private files). We'll call this "Development".
-3. Build things on the Development site.
-4. Using the Configuration Management interface, Drush or Drupal Console, export the full **Development site** configuration. If you are using the UI you will get a compressed file called **config.tar.gz**.
-5. On the **Live** site, use the Configuration Management UI (example.com/admin/config/development/configuration/import) and import the compressed file.
-6. After upload, review the changes (on the UI) and click the "Import all" button.
+Form more details about CM workflow see the docs at [Managing configuration in Drupal 8](https://www.drupal.org/documentation/administer/config).
 
-```
-// Drush, export all config. files to the folder with label "sync"
-// Do this on the Development site
-drush cex sync
-
-// Copy files from Development site to Live site (on the appropriate folders)
-
-// Import all config. files from the folder with label "sync"
-// Do this on the Live site
-drush cim sync
-```
+1. [Configuration Management Workflow using Drush](https://www.drupal.org/node/2416591)
+2. [Configuration Management Workflow using the Drupal UI](https://www.drupal.org/node/2416545)
 
 ### Create a pull request
 See above about VCS and git-flow.
