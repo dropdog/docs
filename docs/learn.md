@@ -285,17 +285,26 @@ Here are some facts about the new [Drupal 8.x core configuration ("config.") sys
 |drush| config-list | cli | List config names by prefix.|
 |drush| config-pull | cpull | Export and transfer config from one environment to another.|
 |drush| config-set | cset | Set config value directly.|
+|drush| config-merge | cm | Merge configuration data from two sites. See [docs](http://drushcommands.com/drush-7x/config/config-merge/) |
 
   - [config_update](https://www.drupal.org/project/config_update) (see [config_update_ui drush inc](http://cgit.drupalcode.org/config_update/tree/config_update_ui/config_update_ui.drush.inc))
 
- | Tool | Command | Alias | Description |
- |------|---------|-------|-------------|
- |drush|config-added-report | cra | Display a list of config items that did not come from your installed modules, themes, or install profile |
- |drush|config-diff |cfd | Display line-by-line differences for one config item between your active config and the version currently being provided by an installed module, theme, or install profile |
- |drush|config-different-report|crd|Display a list of config items that differ from the versions imported from your installed modules, themes, or install profile. See config-diff to show what the differences are|
- |drush|config-inactive-report|cri|Display a list of optional config items from your installed modules, themes, or install profile that are not currently in your active config|
- |drush|config-list-types|clt|List config types|
- |drush|config-missing-report|crm|Display a list of config items from your installed modules, themes, or install profile that are not currently in your active config |
+| Tool | Command | Alias | Description |
+|------|---------|-------|-------------|
+|drush|config-added-report | cra | Display a list of config items that did not come from your installed modules, themes, or install profile |
+|drush|config-diff |cfd | Display line-by-line differences for one config item between your active config and the version currently being provided by an installed module, theme, or install profile |
+|drush|config-different-report|crd|Display a list of config items that differ from the versions imported from your installed modules, themes, or install profile. See config-diff to show what the differences are|
+|drush|config-inactive-report|cri|Display a list of optional config items from your installed modules, themes, or install profile that are not currently in your active config|
+|drush|config-list-types|clt|List config types|
+|drush|config-missing-report|crm|Display a list of config items from your installed modules, themes, or install profile that are not currently in your active config. |
+
+  - [config_devel](https://www.drupal.org/project/config_devel)
+
+| Tool | Command | Alias | Description |
+|------|---------|-------|-------------|
+| drush | config-devel-export | cde, cd-em | Write back configuration to module's config/install directory. List which configuration settings you want to export in the module's info file by listing them under 'config_devel'|
+|drush | config-devel-import| cdi, cd-im | Write back configuration to module's config/install directory. List which configuration settings you want to export in the module's info file by listing them under 'config_devel'|
+|drush|config-devel-import-one | cdi1, cd-i1 | Write back configuration to module's config/install directory. List which configuration settings you want to export in the module's info file by listing them under 'config_devel'|
 
  - [config_sync](https://www.drupal.org/project/config_sync)
  TBD, see [Add Drush support to Configuration Synchronizer](https://www.drupal.org/node/2445463)
