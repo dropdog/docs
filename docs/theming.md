@@ -277,7 +277,7 @@ $sidebar-bg: #ddd
 - Do not import whole scss libraries but only the pieces of code you need (eg ```@import "compass/typography/lists"``` instead of ```@import "compass"```). If it is hard to get only a specific piece just copy that piece from the source on your local scss folder.
 
 
-### Graphics and imaginery best practices
+### Graphics - images best practices
 
 - Use the ```<picture>``` element by default (see the [specification](http://picture.responsiveimages.org/)). Drupal 8.x has a core support for this using the [http://scottjehl.github.io/picturefill/](http://scottjehl.github.io/picturefill/) polyfill and the [responsive_image](https://github.com/drupal/drupal/tree/8.0.x/core/modules/responsive_image) module.
 
@@ -288,6 +288,10 @@ $sidebar-bg: #ddd
 
 ### External CSS and JS libraries
 Please check [development/Adding 3rd party libraries](development#adding-3rd-party-libraries)
+
+### Scaffold a theme
+
+  - [drupal generate:theme](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/generate-theme.html)
 
 ### Debugging a theme
 Check [D.O. related documentation](https://www.drupal.org/node/1906392).
