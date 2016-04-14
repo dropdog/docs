@@ -146,7 +146,7 @@ Rewriting git history may cause unpredictable issues and really big headaches so
 
 See the [online docs](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration). Here are some basic information.
 
-To configure git globally run ```git config --global --edit``` 
+To configure git globally run ```git config --global --edit```
 
  - Enable [rerere](https://git-scm.com/blog/2010/03/08/rerere.html)
  - Do not let git to auto-convert CRLF line endings into LF (`autocrlf`)
@@ -300,6 +300,18 @@ Here are some facts about the new [Drupal 8.x core configuration ("config.") sys
 |drush| config-pull | cpull | Export and transfer config from one environment to another.|
 |drush| config-set | cset | Set config value directly.|
 |drush| config-merge | cm | Merge configuration data from two sites. See [docs](http://drushcommands.com/drush-7x/config/config-merge/) |
+
+  - [features](https://www.drupal.org/project/features)
+
+| Tool | Command | Alias | Description |
+|------|---------|-------|-------------|
+|drush | features-add | fa, fe | Add a config item to a feature package.|
+|drush | features-components | fc | List features components.|
+|drush | features-diff | fd | Show the difference between the active config and the default config stored in a feature package. |
+|drush | features-export | fex, fu, fua, fu-all | Export the configuration on your site into a custom module.|                                                                                                 |drush | features-import | fim, fr | Import a module config into your site.|
+|drush | features-import-all| fra, fia, fim-all| Import module config from all installed features.|
+|drush | features-list-packag |fl | Display a list of all existing features and packages available to be generated.  If a package name is provided as an argument, then all of the configuration objects assigned to that package will be listed.|
+|drush | features-status | fs | Display current Features settings.|
 
   - [config_update](https://www.drupal.org/project/config_update) (see [config_update_ui drush inc](http://cgit.drupalcode.org/config_update/tree/config_update_ui/config_update_ui.drush.inc))
 
