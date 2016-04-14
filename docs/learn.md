@@ -9,7 +9,7 @@
 
 ### Drupal books
 
-Suggested Drupal 8.x books for advanced developers
+Suggested Drupal 8.x books for advanced developers.
 
  - [Drupal 8 Development Cookbook](https://www.packtpub.com/web-development/drupal-8-development-cookbook)
  - [Drupal 8 Module Development](https://www.packtpub.com/web-development/drupal-8-module-development)
@@ -143,7 +143,10 @@ Rewriting git history may cause unpredictable issues and really big headaches so
 [Download as pdf](http://justinhileman.info/article/git-pretty/git-pretty.pdf)
 
 #### Configure git
+
 See the [online docs](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration). Here are some basic information.
+
+To configure git globally run ```git config --global --edit``` 
 
  - Enable [rerere](https://git-scm.com/blog/2010/03/08/rerere.html)
  - Do not let git to auto-convert CRLF line endings into LF (`autocrlf`)
