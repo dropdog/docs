@@ -7,6 +7,17 @@
  - [Drupal 7 to 8](http://nuvole.org/sites/default/files/Drupal-7-to-Drupal-8-Cheatsheet.pdf)
  - [Drupal 8 Configuration schema](http://hojtsy.hu/files/ConfigSchemaCheatSheet1.5.pdf)
 
+### Drupal books
+
+Suggested Drupal 8.x books for advanced developers
+
+ - [Drupal 8 Development Cookbook](https://www.packtpub.com/web-development/drupal-8-development-cookbook)
+ - [Drupal 8 Module Development](https://www.packtpub.com/web-development/drupal-8-module-development)
+ - [Programmer's Guide to Drupal, 2nd Edition](http://shop.oreilly.com/product/0636920034612.do)
+ - [High Performance Drupal](http://shop.oreilly.com/product/0636920012269.do)
+
+ - [Drupal Watchdog magazine](https://drupalwatchdog.com/)
+
 ### Using Composer
 Drupal 8.x supports (and promotes) usage of [Composer](https://getcomposer.org/).
 Core and contrib projects may require external libraries that can be attached to
