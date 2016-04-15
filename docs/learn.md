@@ -89,6 +89,26 @@ composer create-project drupalcommerce/project-base <PROJECT_FOLDER> --stability
 
 ### Building with Features
 
+This is an example of a workflow using Features and Core Configuration Management (CMI) in D8.
+It assumes that you are using 3 development environments Development, Staging and Production.
+
+**Creating initial config:**
+
+1. Use Features to organize your config into modules
+2. Push feature module code into git repo
+3. On Staging server pull the repo, enable all the modules. Initial config will be loaded
+4. On Staging, use CMI to export all config
+5. Pull both code and config export to production
+6. On Production, import all config
+
+**Making a change to Feature(s):**
+
+1. On your Development, update the feature code, push to your repo
+2. On Staging, pull the code and import/revert the feature
+3. Once tested, use CMI to export all config
+4. On Production, pull code and config
+5. On Production, import all config
+
 ### Create a multilingual website
 Create a multilingual installation with Dummy content and inspect the database.
 
