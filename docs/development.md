@@ -278,6 +278,7 @@ See also [D.O. - Applying patches](https://www.drupal.org/patch/apply).
 ### Installing the distribution
  - Using **drush** only (make, site-install, db sync, file dl etc. Check ```drush make --help```)
  - Using git only (from the full site repo including Drupal core)
+ - Using composer (see [Composer in relation to Drush Make](https://www.drupal.org/node/2471553))
 
 Example of a build using Drush.
 
