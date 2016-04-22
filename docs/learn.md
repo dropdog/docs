@@ -51,7 +51,7 @@ composer install
 composer require
 
 // Updates your dependencies to the latest version according to composer.json,
-and updates the composer.lock file.
+// and updates the composer.lock file.
 composer update
 
 // Removes a package from the require or require-dev.
