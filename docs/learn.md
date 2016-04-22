@@ -319,7 +319,7 @@ Here are some facts about the new [Drupal 8.x core configuration ("config.") sys
 |drush| config-list | cli | List config names by prefix.|
 |drush| config-pull | cpull | Export and transfer config from one environment to another.|
 |drush| config-set | cset | Set config value directly.|
-|drush| config-merge | cm | Merge configuration data from two sites. See [docs](http://drushcommands.com/drush-7x/config/config-merge/) |
+|drush| config-merge | cm | (External plugin) Merge configuration data from two sites. See [docs](http://drushcommands.com/drush-7x/config/config-merge/) and source code at [github.com/drush-ops/config-extra](https://github.com/drush-ops/config-extra) |
 
   - [features](https://www.drupal.org/project/features)
 
@@ -354,6 +354,29 @@ Here are some facts about the new [Drupal 8.x core configuration ("config.") sys
 
  - [config_sync](https://www.drupal.org/project/config_sync)
  TBD, see [Add Drush support to Configuration Synchronizer](https://www.drupal.org/node/2445463)
+
+
+Examples of **drush commands related to configuration**.
+
+```
+// Get config of specific yml files
+drush config-list | grep views
+
+// Edit a config file with an editor
+drush cedit views.view.content
+
+// Install partial config from a folder
+drush cim --partial --source=/path/to/my/install/config
+
+// Install a new site from a config folder
+drush si --config-dir=/path/to/my/install/config
+
+// config-merge example, see more at:
+// https://github.com/pantheon-systems/drush-config-workflow/blob/master/docs/git_workflow.md
+drush @dev config-merge @stage --git --message="Move config from @dev to @stage"
+
+```
+
 
 ### Create an issue on Github
 
