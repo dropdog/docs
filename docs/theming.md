@@ -177,7 +177,7 @@ Structure generated with command ```tree -F -a --dirsfirst```. See the structure
 ├── js/
 │   └── scripts.js
 ├── scss/
-│   ├── drupal_blocks/
+│   ├── drupal_block/
 │   │   ├── _breadcrumbs
 │   │   ├── _logo
 │   │   ├── _page_title
@@ -186,9 +186,9 @@ Structure generated with command ```tree -F -a --dirsfirst```. See the structure
 │   │   ├── _blog.scss
 │   │   ├── _event.scss
 │   │   └── _page.scss
-│   ├── drupal_forms/
+│   ├── drupal_form/
 │   │   └── _contact.scss
-│   ├── drupal_pages/
+│   ├── drupal_page/
 │   │   └── _user.scss
 │   ├── drupal_region/
 │   │   ├── _footer.scss
