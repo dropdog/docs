@@ -362,7 +362,7 @@ Development software (check also at [D.O. Development tools](https://www.drupal.
 | system config     | dev | same as live | - |
 | drush etc aliases | common | common | none |
 
-(1) Not sure if config should move between environments...
+(1) Probably config should merge between environments.
 
 ### Import/export Drupal site Configuration
 
