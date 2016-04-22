@@ -7,10 +7,9 @@ You can use for your own purpose under [Open Publication License](https://github
 
 Read the docs online: [dropdog.readthedocs.org](http://dropdog.readthedocs.org/)
 
-- Created and maintained by [Hostdog.eu](https://www.hostdog.eu "Web hosting company")
-- Docs project on Readthedocs: [readthedocs.org/projects/dropdog](https://readthedocs.org/projects/dropdog/)
-- Edit the Docs on Github: [github.com/dropdog/docs](https://github.com/dropdog/docs)
-- Distro official url: [dropdog.github.io/website](http://dropdog.github.io/website/)
+- Owner and maintainer: [Hostdog.eu](https://www.hostdog.eu "Web hosting company")
+- Docs on Readthedocs: [readthedocs.org/projects/dropdog](https://readthedocs.org/projects/dropdog/)
+- Docs on Github: [github.com/dropdog/docs](https://github.com/dropdog/docs)
 
 ## Table of Contents
 
