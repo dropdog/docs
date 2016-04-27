@@ -1,11 +1,11 @@
 ## About and project links
 
-[![Documentation Status](https://readthedocs.org/projects/dropdog/badge/?version=master)](http://dropdog.readthedocs.org/?badge=master)
+[![Documentation Status](https://readthedocs.org/projects/dropdog/badge/?version=master)](http://dropdog.readthedocs.io)
 
 This is the online documentation for Drupal Developers/Themers etc for the **DropDog Drupal 8.x** distribution.
 You can use for your own purpose under [Open Publication License](https://github.com/dropdog/docs/blob/master/LICENSE).
 
-Read the docs online: [dropdog.readthedocs.org](http://dropdog.readthedocs.io/)
+Read the docs online: [dropdog.readthedocs.io](http://dropdog.readthedocs.io/)
 
 - Owner and maintainer: [Hostdog.eu](https://www.hostdog.eu "Web hosting company")
 - Docs on Readthedocs: [readthedocs.org/projects/dropdog](https://readthedocs.org/projects/dropdog/)
