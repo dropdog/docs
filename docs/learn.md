@@ -229,7 +229,7 @@ Example of a global `.gitconfig` file (part of):
  - [drush php-eval](http://drushcommands.com/drush-8x/core/php-eval/ 'Evaluate arbitrary php code after bootstrapping Drupal (if available).'). Example: ```drush ev 'node_access_rebuild()'```
  - [drush entity-updates](http://drushcommands.com/drush-8x/core/entity-updates/ 'Apply pending entity schema updates.'). Example: ```drush entup```
 
-**Drupal Console** ([Drupal Console](https://drupalconsole.com/))
+**Drupal Console** ([Drupal Console](https://drupalconsole.com/), [Drupal console cheatsheet](http://drupalconsole.com/cheatsheet/))
 
  - [drupal site:mode dev](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/site-mode.html 'Switch system performance configuration, dev|prod')
  - [drupal config:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/config-debug.html 'Show the current configuration.')
