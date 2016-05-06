@@ -62,6 +62,15 @@ composer dump-autoload
 
 // Create new project from a package into given directory.
 composer create-project
+
+// Validate a composer json
+composer Validate
+
+// Show the installed packages
+composer show --installed
+
+// Show details about a package
+composer show doctrine/annotations
 ```
 
   - Example of adding requirements of the [address](https://www.drupal.org/project/address) module:
@@ -210,7 +219,7 @@ Example of a global `.gitconfig` file (part of):
 
 ### Debug Drupal
 
-**Drush**
+**Drush** ([Drush](https://github.com/drush-ops/drush))
 
  - You can always **simulate a drush command** without executing by adding the `--simulate` argument at the end.
  - You can debug a drush command using the `--verbose` and `--debug` arguments.
@@ -249,6 +258,8 @@ Example of a global `.gitconfig` file (part of):
  - [drupal user:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/user-debug.html 'Displays current users for the application.')
  - [drupal views:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/views-debug.html 'Display current views resources for the application.')
 
+See also: [Debugging Drupal 8 with Drupal Console](http://jmolivas.com/slides/fldc16/debugging-drupal-8/).
+
 **Drupal modules**
 
  - [devel](https://www.drupal.org/project/devel) (devel, webprofiler). See the docs for the [WebProfiler](https://github.com/lussoluca/webprofiler).
@@ -259,7 +270,16 @@ Example of a global `.gitconfig` file (part of):
 
 **Database debug**
 
+Tools:
+
  - [MySQL Workbench](https://www.mysql.com/products/workbench/)
+
+Drupal console commands:
+
+ - [drupal database:connect](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-connect.html, 'Shows DB connection')
+ - [drupal database:client](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-client.html, 'Launch a DB client if it's available')
+ - [drupal database:table:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-table-debug.html, 'Show all tables in a given database')
+ - [drupal database:log:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-log-debug.html, 'Display current log events for the application')
 
 **Code review (for Drupal)**
 
