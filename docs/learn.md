@@ -219,6 +219,12 @@ Example of a global `.gitconfig` file (part of):
 
 ### Debug Drupal
 
+Useful resources:
+
+ - [Debugging Drupal 8 - Videos](https://www.youtube.com/playlist?list=PLBoDia496opGL6uvgu6TJEvoNx4cDZ7tz)
+ - [Debugging During Development in Drupal 8](https://zivtech.gitbooks.io/debug-tools-for-drupal8/content/)
+ - [Debugging Drupal 8 with Drupal Console](http://jmolivas.com/slides/fldc16/debugging-drupal-8/)
+
 **Drush** ([Drush](https://github.com/drush-ops/drush))
 
  - You can always **simulate a drush command** without executing by adding the `--simulate` argument at the end.
@@ -257,8 +263,6 @@ Example of a global `.gitconfig` file (part of):
  - [drupal update:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/update-debug.html 'Display current updates available for the application.')
  - [drupal user:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/user-debug.html 'Displays current users for the application.')
  - [drupal views:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/views-debug.html 'Display current views resources for the application.')
-
-See also: [Debugging Drupal 8 with Drupal Console](http://jmolivas.com/slides/fldc16/debugging-drupal-8/).
 
 **Drupal modules**
 
