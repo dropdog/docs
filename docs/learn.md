@@ -15,7 +15,6 @@ Suggested Drupal 8.x books for advanced developers.
  - [Drupal 8 Module Development](https://www.packtpub.com/web-development/drupal-8-module-development)
  - [Programmer's Guide to Drupal, 2nd Edition](http://shop.oreilly.com/product/0636920034612.do)
  - [High Performance Drupal](http://shop.oreilly.com/product/0636920012269.do)
-
  - [Drupal Watchdog magazine](https://drupalwatchdog.com/)
 
 ### Using Composer
