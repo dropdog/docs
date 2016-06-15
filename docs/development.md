@@ -509,7 +509,7 @@ $form['parent_group']['parent_group_child'] = array();
  - After exporting a DFeature check that there is **no dependency to itself**.
  - Use the current installation <Profile_machine_name> as Bundle name. Do not add DFeatures with the Default Features Bundle.
  - Each Content Type Feature (CTF) will package the CT fields, node form, related views, related blocks and user permissions.
- - Better add the "<Profile_name>" before each Feature name to avoid misconceptions with other modules and make it easier to search for a Feature.
+ - Better add the "[profile_machine_name]" before each Feature name to avoid misconceptions with other modules and make it easier to search for a Feature.
 
 
 ### Adding 3rd party libraries
