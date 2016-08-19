@@ -30,6 +30,7 @@
 - Anonymous (User)
 - WYSIWYG (Editor)
 - [token_placeholder]
+- UI (User Interface)
 - D.O. (Drupal.org)
 - TBD (To Be Done)
 - DRY (Don't Repeat Yourself)

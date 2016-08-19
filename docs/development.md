@@ -71,8 +71,16 @@ Tasks are also issues but with a different label.
  - Create the issue only on Github.
  - There must be only one unique issue and no duplicates.
  - If an issue refers to an old issue reopen it and don't create a new issue.
+ - Every issue must be as much as possible self hosted on Github. Images, assets, code etc should better live on the Github to avoid missing things etc later.
+ - Add the related tags (**labels** and **milestones**)! If there is no a tag you are looking for ask to the Admin to create one.
+ - Closing and reopening issues is not something to avoid. Open any issue if you have to do more job, if you need declaration, if you want to keep it on front etc.
+ - We are going to refer to issues on the git commits using the #number of the issue.
+ - Mention other people using ```@mention```. If you want to cc them use ```/cc @user1 @user2``` etc.
+ - View all your GH issues at [github.com/issues](https://github.com/issues).
+ - View your [Assigned](https://github.com/issues/assigned) issues.
+ - View your [Mentioned](https://github.com/issues/mentioned) issues.
 
- On the issue you must include:
+On the issue you must include:
 
   - steps to reproduce the issue
   - files that are related
@@ -83,17 +91,8 @@ Tasks are also issues but with a different label.
   - the version of the software (eg Drupal core) you are using
   - the error logs if any (Drupal's database_log or system_log)
 
-
- - Every issue must be as much as possible self hosted on Github. Images, assets, code etc should better live on the Github to avoid missing things etc later.
- - Add the related tags (**labels** and **milestones**)! If there is no a tag you are looking for ask to the Admin to create one.
- - Closing and reopening issues is not something to avoid. Open any issue if you have to do more job, if you need declaration, if you want to keep it on front etc.
- - We are going to refer to issues on the git commits using the #number of the issue.
- - Mention other people using ```@mention```. If you want to cc them use ```/cc @user1 @user2``` etc.
- - View all your GH issues at [github.com/issues](https://github.com/issues).
- - View your [Assigned](https://github.com/issues/assigned) issues.
- - View your [Mentioned](https://github.com/issues/mentioned) issues.
-
 ### VCS - Using git-flow and related tools
+
 We are using the default **[git-flow](http://nvie.com/posts/a-successful-git-branching-model/) methodology** and its conventions.
 
  - See the [git-flow cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/) for fast learning.
@@ -339,17 +338,15 @@ Development software (check also at [D.O. Development tools](https://www.drupal.
 
 ### How to add new modules
 
- - Download the module ```drush dl [module]``` (it will be under /modules/[module])
- - Test it works (ui)
- - Test it can be uninstalled (ui or drush)
+ - Download the module ```drush dl [module]```.
+ - Test it works (using UI, if has a UI)
+ - Test it can be uninstalled (using the UI or drush)
  - If all tests pass leave it on folder
  - If it is a requirement for a DFeature add it on the DFeature
  - Move the module on the [profile] folder (it will be under **/profiles/[profile]** and it will be tracked from VCS)
  - rebuild registry (```drush cr```)
  - If tests do not pass DO NOT USE it and try to solve the errors (patches, D.O. issues etc)
  - If tests do not pass add an issue on GH
-
-***Example: TBD (screencast)***
 
 ### Development flow
 
