@@ -1,6 +1,8 @@
 ## Basic testing
 ------------------
 
+Here are some basic information about what things to test, how to create tests etc.
+
 ### Tests for Entities
 
 See the related guides at [/development](/development/#building-content-types-and-fields)

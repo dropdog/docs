@@ -1,6 +1,9 @@
 ## Custom development scripts
 ------------------------------
 
+Currently none of the scripts bellow has been published. TBD.
+
+
 ### Create a dev project folder from Drupal.org core and Github distro.
 
 ### Build the Distribution from Profile on Github
@@ -38,12 +41,13 @@
 ### Autocreate Tests for new Entities/Views/Blocks (eg with Console)
 
 ### Tmux script
+
 [tmux](https://tmux.github.io/) is a terminal multiplexer. Here are some panes for the project.
 
-- ls to Drupal folder
-- start docker (or start php server)
-- ```git checkout develop && git pull```
-- open slack url
-- open github repository url
-- open website url(s)
-- open git ui
+  - ls to Drupal folder
+  - start docker (or start php server)
+  - ```git checkout develop && git pull```
+  - open slack url
+  - open github repository url
+  - open website url(s)
+  - open git ui

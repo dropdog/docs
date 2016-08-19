@@ -25,6 +25,7 @@
 - Theme
 - Section
 - CRUD
+- GH (Github)
 - User
 - Anonymous (User)
 - WYSIWYG (Editor)

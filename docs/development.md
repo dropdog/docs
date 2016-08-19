@@ -72,7 +72,8 @@ Tasks are also issues but with a different label.
  - There must be only one unique issue and no duplicates.
  - If an issue refers to an old issue reopen it and don't create a new issue.
 
- - On the issue you must include
+ On the issue you must include:
+
   - steps to reproduce the issue
   - files that are related
   - the webpage(s) that shows the issue
@@ -81,6 +82,7 @@ Tasks are also issues but with a different label.
   - a screenshot (if needed)
   - the version of the software (eg Drupal core) you are using
   - the error logs if any (Drupal's database_log or system_log)
+
 
  - Every issue must be as much as possible self hosted on Github. Images, assets, code etc should better live on the Github to avoid missing things etc later.
  - Add the related tags (**labels** and **milestones**)! If there is no a tag you are looking for ask to the Admin to create one.
@@ -159,7 +161,6 @@ change? Here's the place to explain them.
 Further paragraphs come after blank lines.
 
  - Bullet points are okay, too
-
  - Typically a hyphen or asterisk is used for the bullet, preceded
    by a single space, with blank lines in between, but conventions
    vary here
@@ -187,7 +188,6 @@ Here are the principles of atomic commits:
  - Only commit when a block of work is complete. Don't commit half-done work.
  - Commit each layout change separately.
  - Joint commit for layout file, code behind file, and additional resources.
- - **@TODO**: See if one commit per pull request makes sense. See an example at the [Symfony Docs](http://symfony.com/doc/current/cmf/contributing/commits.html).
 
 Here are the benefits:
 
@@ -317,6 +317,7 @@ Steps to create a new release (for the Profile Administrator):
  - Create a git tag for the release and push the new tag on the repository
 
 ### Setting up the (local) development environment
+
 Required software (to install and use Drupal). See also [Drupal installation requirements](https://www.drupal.org/requirements/) on D.O.
 
  - wget
@@ -339,14 +340,12 @@ Development software (check also at [D.O. Development tools](https://www.drupal.
 ### How to add new modules
 
  - Download the module ```drush dl [module]``` (it will be under /modules/[module])
-
  - Test it works (ui)
  - Test it can be uninstalled (ui or drush)
  - If all tests pass leave it on folder
  - If it is a requirement for a DFeature add it on the DFeature
  - Move the module on the [profile] folder (it will be under **/profiles/[profile]** and it will be tracked from VCS)
  - rebuild registry (```drush cr```)
-
  - If tests do not pass DO NOT USE it and try to solve the errors (patches, D.O. issues etc)
  - If tests do not pass add an issue on GH
 
@@ -524,6 +523,7 @@ $form['parent_group']['parent_group_child'] = array();
 ### Using Docker
 
 #### Docker images
+
 We use Docker to create private or public images. Images can be of several types such as:
 
  - A generic public LAMP image ready to install any Drupal 8.x website (see [image dropdog/docker](https://hub.docker.com/r/dropdog/docker/))
@@ -531,6 +531,7 @@ We use Docker to create private or public images. Images can be of several types
  - A specific private image to run tests (using the above image as base)
 
 #### How to use Docker for development
+
 See the related chapter at [learn#docker](learn#docker) file.
 
 ### Examples of using Docker

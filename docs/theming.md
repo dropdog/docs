@@ -10,6 +10,7 @@ We follow the **desktop first** design. That means that we design for desktop bu
 Follow the [Atomic design](http://patternlab.io/about.html) philosophy for the css as also as for the design and html.
 
 Here are some examples of the Atomic design in terms of Drupal. Do not confuse these with the scss file structure.
+
 - Atoms: basic HTML tags, browser resets, Drupal resets.
 - Molecules: logo, search form, breadcrumbs,
 - Organisms: views list, sidebar, header, content type full view mode.
@@ -82,12 +83,10 @@ In case of Drupal some common **Static pages** are:
 - User password
 - User account
 - User edit form
-
-- contact page and form
-
+- Contact page and form
 - 404 page (not found)
 - 403 page (access denied)
-- maintenance page
+- Maintenance page
 
 - ```node/add/*```, ```node/*/edit``` pages (forms)
 - ```node/*/preview```
@@ -282,11 +281,13 @@ $sidebar-bg: #ddd
 - Use the ```<picture>``` element by default (see the [specification](http://picture.responsiveimages.org/)). Drupal 8.x has a core support for this using the [http://scottjehl.github.io/picturefill/](http://scottjehl.github.io/picturefill/) polyfill and the [responsive_image](https://github.com/drupal/drupal/tree/8.0.x/core/modules/responsive_image) module.
 
 ### Fonts and typography
+
 - Try using open source fonts (eg [Google Fonts](https://www.google.com/fonts)).
 - If you have the copyright to download the fonts locally do this instead of loading them from the online source.
 - Be careful so the selected fonts (and their fallback) do support all the languages.
 
 ### External CSS and JS libraries
+
 Please check [development/Adding 3rd party libraries](development#adding-3rd-party-libraries)
 
 ### Scaffold a theme
@@ -294,21 +295,25 @@ Please check [development/Adding 3rd party libraries](development#adding-3rd-par
   - [drupal generate:theme](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/generate-theme.html)
 
 ### Debugging a theme
+
 Check [D.O. related documentation](https://www.drupal.org/node/1906392).
 
 ### Performance and page loading
+
 TBD
 
-- What are our performance targets
-- Cache tags
-- Views caching
-- CDN
-- Measure performance (tools)
+  - What are our performance targets
+  - Cache tags
+  - Views caching
+  - CDN
+  - Measure performance (tools)
 
 ### Accessibility best practices
+
 TBD
-- Accessibility standard we support (link)
-- Basic rules to follow
-- Images
-- Forms
-- How to fix accessibility issues (within Drupal)
+
+  - Accessibility standard we support (link)
+  - Basic rules to follow
+  - Images
+  - Forms
+  - How to fix accessibility issues (within Drupal)

@@ -211,11 +211,6 @@ Example of a global `.gitconfig` file (part of):
   tool = <YOUR_GIT_DIFF_GUI>
 ```
 
-
-### Git-flow commands scriptplay
-
-### Setup a development environment
-
 ### Debug Drupal
 
 Useful resources:
@@ -400,18 +395,15 @@ drush @dev config-merge @stage --git --message="Move config from @dev to @stage"
 
 ```
 
-
-### Create an issue on Github
-
-### Create a pull request
-
-### Get familiar with the new API (+API docs)
-
 ### Useful browser extensions and plugins
 
-### Run tests
+  - [dreditor](https://github.com/mattgrill/dreditor)
+  - [drupal API search - Chrome](https://gist.github.com/prairiehippo/3238902)
+  - [Drupal.org issue tracker](https://github.com/mglaman/drupalorg-issue-tracker)
+  - [Github Octotree](https://github.com/buunguyen/octotree)
 
 ### OOP - how to
+
  See [Drupal 8 - Background & Prerequisites](https://www.drupal.org/getting-started-d8-bkg-prereq)
 
  Also [oop_examples](https://www.drupal.org/project/oop_examples)
@@ -422,6 +414,7 @@ drush @dev config-merge @stage --git --message="Move config from @dev to @stage"
  - IDE in the rescue
 
 ### Docker
+
 [Docker](https://www.docker.com/) allows you to package an application with all of its
 dependencies into a standardized unit for software development.
 
@@ -435,7 +428,3 @@ You can use Docker with many ways while developing. Some common scenario usages 
  - Automate Continuous Delivery (CD)
  - Reproduce issues and errors and share them with the team
  - Test Drupal core or contrib modules updates
-
-### Other
-
-(Vagrant, Otto, Jenkins, Continuous Integration ...)

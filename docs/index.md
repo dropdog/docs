@@ -1,6 +1,6 @@
 ## About and project links
 
-[![Documentation Status](https://readthedocs.org/projects/dropdog/badge/?version=master)](http://dropdog.readthedocs.io)
+[![Documentation Status](https://readthedocs.org/projects/dropdog/badge/?version=master)](http://dropdog.readthedocs.io/?badge=master)
 
 A useful manual for Drupal developers, themers and site builders that want to start collaboration work with the new Drupal 8.x staff.
 

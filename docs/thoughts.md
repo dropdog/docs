@@ -1,7 +1,7 @@
 ## Development thoughts
 --------------------------
 
-### On ```settings.php```
+### On file ```settings.php```
 
 - Use prefixes by table for the database in order to exclude tables from database import/export processes.
 - Store user generated files (```sites/*/files```) on external storage and get files from there for any new build.
@@ -12,12 +12,12 @@
 - Move ```config*``` files out of sites/* folder.
 - Use `$settings['file_public_base_url']` variable to have the public files on external folder.
 
-### On ```services.yml```
+### On file ```services.yml```
 
 - Modify the ```renderer_cache_contexts``` to alter cache settings. See the related [Drupal.org API](https://www.drupal.org/developing/api/8/cache/contexts).
 - Create custom cache tags for rendering caching and add them to ```autoplaceholder_conditions``` variable.
 
-### On packaging
+### On packaging, distribution
 
  - When creating Drupal Features it is better to add dependencies of D.O. modules and not of custom modules that belong to the profile.
  Except if the required feature has necessary settings. This way each feature could be more "independent".
