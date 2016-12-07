@@ -265,6 +265,7 @@ Useful resources:
 **PHP debug and testing**
 
  - [blackfire.io](https://blackfire.io/). See [24 Days of Blackfire](https://blackfire.io/docs/24-days/index).
+ - [Debugging in the Just-In-Time (JIT) Mode](https://www.jetbrains.com/help/phpstorm/2016.3/debugging-in-the-just-in-time-mode.html)
 
 **Database debug**
 
