@@ -1,6 +1,8 @@
 ## Learning tasks for Developers
 -----------------------------------
 
+Useful guides, resources and code examples to learn software usage that is required for this project.
+
 ### Useful 8.x cheatsheets
 
  - [Drupal 8 entity API](http://wizzlern.nl/sites/wizzlern.nl/files/artikel/drupal-content-entity-8.0.pdf)
@@ -13,7 +15,7 @@ Suggested Drupal 8.x books for advanced developers.
 
  - [Enterprise Drupal 8 Development](http://www.apress.com/gp/book/9781484202548)
  - [Drupal 8 Development Cookbook](https://www.packtpub.com/web-development/drupal-8-development-cookbook)
- - [Programmer's Guide to Drupal, 2nd Edition](http://shop.oreilly.com/product/0636920034612.do)
+ - [Programmer"s Guide to Drupal, 2nd Edition](http://shop.oreilly.com/product/0636920034612.do)
  - [High Performance Drupal](http://shop.oreilly.com/product/0636920012269.do)
  - [Drupal Watchdog magazine](https://drupalwatchdog.com/)
 
@@ -167,7 +169,7 @@ Rewriting git history may cause unpredictable issues and really big headaches so
  - [Git Tools - Rewriting History](http://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
  - [Git: Revert a Commit Already Pushed to a Remote Repository](http://christoph.ruegg.name/blog/git-howto-revert-a-commit-already-pushed-to-a-remote-reposit.html)
 
-![How to handle a git mess](http://justinhileman.info/article/git-pretty/git-pretty.png 'How to handle a git mess')
+![How to handle a git mess](http://justinhileman.info/article/git-pretty/git-pretty.png "How to handle a git mess")
 [Download as pdf](http://justinhileman.info/article/git-pretty/git-pretty.pdf)
 
 #### Configure git
@@ -224,39 +226,39 @@ Useful resources:
  - You can always **simulate a drush command** without executing by adding the `--simulate` argument at the end.
  - You can debug a drush command using the `--verbose` and `--debug` arguments.
 
- - [drush core-status](http://drushcommands.com/drush-8x/core/core-status/ 'Provides a birds-eye view of the current Drupal installation, if any.'). Example: ```drush st --full```
- - [drush core-cli](http://drushcommands.com/drush-8x/core/core-cli/ 'Open an interactive shell on a Drupal site.'). Example: ```drush php```
- - [drush sql-cli](http://drushcommands.com/drush-8x/sql/sql-cli/ 'Open a SQL command-line interface using Drupal's credentials.'). Example: ```drush sqlc```
- - [drush watchdog-show](http://drushcommands.com/drush-8x/watchdog/watchdog-show/ 'Show watchdog messages.'). Example: ```drush ws --tail --extended```
- - [drush pm-projectinfo](http://drushcommands.com/drush-8x/pm/pm-projectinfo/ 'Show a report of available projects and their extensions.'). Example: ```drush pmpi --format=table```
- - [drush pm-list](http://drushcommands.com/drush-8x/pm/pm-list/, 'Show a list of available extensions (modules and themes).'). Example: ```drush pml --type=module --format=table --no-core --status=enabled```
- - [drush pm-releases](http://drushcommands.com/drush-8x/pm/pm-releases/ 'Print release information for given projects.'). Example: ```drush rl --format=table drupal```
- - [drush config-list](http://drushcommands.com/drush-8x/config/config-list/ 'List config names by prefix.'). Example: ```drush cli system --format=list | grep article```
- - [drush config-get](http://drushcommands.com/drush-8x/config/config-get/ 'Display a config value, or a whole configuration object.'). Example: ```drush cget system.site --format=yaml```
- - [drush field-info](http://drushcommands.com/drush-8x/field/field-info/ 'View information about fields, field_types, and widgets.') (Not ready at the moment. Please check this [issue](https://github.com/drush-ops/drush/issues/230))
- - [drush features-status](http://drushcommands.com/drush-8x/features/features-status/ 'Display current Features settings.')
- - [drush php-eval](http://drushcommands.com/drush-8x/core/php-eval/ 'Evaluate arbitrary php code after bootstrapping Drupal (if available).'). Example: ```drush ev 'node_access_rebuild()'```
- - [drush entity-updates](http://drushcommands.com/drush-8x/core/entity-updates/ 'Apply pending entity schema updates.'). Example: ```drush entup```
+ - [drush core-status](http://drushcommands.com/drush-8x/core/core-status/ "Provides a birds-eye view of the current Drupal installation, if any."). Example: ```drush st --full```
+ - [drush core-cli](http://drushcommands.com/drush-8x/core/core-cli/ "Open an interactive shell on a Drupal site."). Example: ```drush php```
+ - [drush sql-cli](http://drushcommands.com/drush-8x/sql/sql-cli/ "Open a SQL command-line interface using Drupal"s credentials."). Example: ```drush sqlc```
+ - [drush watchdog-show](http://drushcommands.com/drush-8x/watchdog/watchdog-show/ "Show watchdog messages."). Example: ```drush ws --tail --extended```
+ - [drush pm-projectinfo](http://drushcommands.com/drush-8x/pm/pm-projectinfo/ "Show a report of available projects and their extensions."). Example: ```drush pmpi --format=table```
+ - [drush pm-list](http://drushcommands.com/drush-8x/pm/pm-list/, "Show a list of available extensions (modules and themes)."). Example: ```drush pml --type=module --format=table --no-core --status=enabled```
+ - [drush pm-releases](http://drushcommands.com/drush-8x/pm/pm-releases/ "Print release information for given projects."). Example: ```drush rl --format=table drupal```
+ - [drush config-list](http://drushcommands.com/drush-8x/config/config-list/ "List config names by prefix."). Example: ```drush cli system --format=list | grep article```
+ - [drush config-get](http://drushcommands.com/drush-8x/config/config-get/ "Display a config value, or a whole configuration object."). Example: ```drush cget system.site --format=yaml```
+ - [drush field-info](http://drushcommands.com/drush-8x/field/field-info/ "View information about fields, field_types, and widgets.") (Not ready at the moment. Please check this [issue](https://github.com/drush-ops/drush/issues/230))
+ - [drush features-status](http://drushcommands.com/drush-8x/features/features-status/ "Display current Features settings.")
+ - [drush php-eval](http://drushcommands.com/drush-8x/core/php-eval/ "Evaluate arbitrary php code after bootstrapping Drupal (if available)."). Example: ```drush ev "node_access_rebuild()"```
+ - [drush entity-updates](http://drushcommands.com/drush-8x/core/entity-updates/ "Apply pending entity schema updates."). Example: ```drush entup```
 
 **Drupal Console** ([Drupal Console](https://drupalconsole.com/), [Drupal console cheatsheet](http://drupalconsole.com/cheatsheet/))
 
- - [drupal site:mode dev](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/site-mode.html 'Switch system performance configuration, dev|prod')
- - [drupal config:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/config-debug.html 'Show the current configuration.')
- - [drupal container:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/container-debug.html 'Displays current services for an application.')
- - [drupal cron:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/cron-debug.html 'List of modules implementing a cron')
- - [drupal database:log:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-log-debug.html ' Display current log events for the application.')
- - [drupal database:table:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-table-debug.html 'Show all tables in a given database.')
- - [drupal module:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/module-debug.html 'Display current modules available for application.')
- - [drupal rest:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/rest-debug.html 'Display current rest resource for the application.')
- - [drupal router:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/router-debug.html 'Displays current routes for the application.')
- - [drupal settings:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/settings-debug.html 'List user Drupal Console settings.')
- - [drupal site:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/site-debug.html 'List all known local and remote sites.')
- - [drupal state:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/state-debug.html 'Show the current State keys.')
- - [drupal test:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/test-debug.html 'List Test Units available for the application.')
- - [drupal theme:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/theme-debug.html 'Displays current themes for the application.')
- - [drupal update:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/update-debug.html 'Display current updates available for the application.')
- - [drupal user:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/user-debug.html 'Displays current users for the application.')
- - [drupal views:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/views-debug.html 'Display current views resources for the application.')
+ - [drupal site:mode dev](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/site-mode.html "Switch system performance configuration, dev|prod")
+ - [drupal config:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/config-debug.html "Show the current configuration.")
+ - [drupal container:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/container-debug.html "Displays current services for an application.")
+ - [drupal cron:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/cron-debug.html "List of modules implementing a cron")
+ - [drupal database:log:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-log-debug.html " Display current log events for the application.")
+ - [drupal database:table:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-table-debug.html "Show all tables in a given database.")
+ - [drupal module:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/module-debug.html "Display current modules available for application.")
+ - [drupal rest:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/rest-debug.html "Display current rest resource for the application.")
+ - [drupal router:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/router-debug.html "Displays current routes for the application.")
+ - [drupal settings:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/settings-debug.html "List user Drupal Console settings.")
+ - [drupal site:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/site-debug.html "List all known local and remote sites.")
+ - [drupal state:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/state-debug.html "Show the current State keys.")
+ - [drupal test:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/test-debug.html "List Test Units available for the application.")
+ - [drupal theme:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/theme-debug.html "Displays current themes for the application.")
+ - [drupal update:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/update-debug.html "Display current updates available for the application.")
+ - [drupal user:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/user-debug.html "Displays current users for the application.")
+ - [drupal views:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/views-debug.html "Display current views resources for the application.")
 
 **Drupal modules**
 
@@ -275,10 +277,10 @@ Tools:
 
 Drupal console commands:
 
- - [drupal database:connect](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-connect.html, 'Shows DB connection')
- - [drupal database:client](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-client.html, 'Launch a DB client if it's available')
- - [drupal database:table:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-table-debug.html, 'Show all tables in a given database')
- - [drupal database:log:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-log-debug.html, 'Display current log events for the application')
+ - [drupal database:connect](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-connect.html, "Shows DB connection")
+ - [drupal database:client](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-client.html, "Launch a DB client if it"s available")
+ - [drupal database:table:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-table-debug.html, "Show all tables in a given database")
+ - [drupal database:log:debug](https://hechoendrupal.gitbooks.io/drupal-console/content/en/commands/database-log-debug.html, "Display current log events for the application")
 
 **Code review (for Drupal)**
 
@@ -293,7 +295,7 @@ Drupal console commands:
  - [Drupal Development using PhpStorm](https://confluence.jetbrains.com/display/PhpStorm/Drupal+Development+using+PhpStorm)
  - [Phpstorm - Preparing for Drupal Development in PhpStorm](https://www.jetbrains.com/phpstorm/help/preparing-for-drupal-development-in-phpstorm.html)
  - [Phpstorm - Drupal-Specific Coding Assistance](https://www.jetbrains.com/phpstorm/help/drupal-specific-coding-assistance.html)
- - [Setting up PhpStorm for Drupal's Coding Standards](https://www.drupal.org/node/1962108)
+ - [Setting up PhpStorm for Drupal"s Coding Standards](https://www.drupal.org/node/1962108)
 
 ### Drupal 8.x configuration system
 
@@ -367,9 +369,9 @@ Here are some facts about the new [Drupal 8.x core configuration ("config.") sys
 
 | Tool | Command | Alias | Description |
 |------|---------|-------|-------------|
-| drush | config-devel-export | cde, cd-em | Write back configuration to module's config/install directory. List which configuration settings you want to export in the module's info file by listing them under 'config_devel'|
-|drush | config-devel-import| cdi, cd-im | Write back configuration to module's config/install directory. List which configuration settings you want to export in the module's info file by listing them under 'config_devel'|
-|drush|config-devel-import-one | cdi1, cd-i1 | Write back configuration to module's config/install directory. List which configuration settings you want to export in the module's info file by listing them under 'config_devel'|
+| drush | config-devel-export | cde, cd-em | Write back configuration to module"s config/install directory. List which configuration settings you want to export in the module"s info file by listing them under "config_devel"|
+|drush | config-devel-import| cdi, cd-im | Write back configuration to module"s config/install directory. List which configuration settings you want to export in the module"s info file by listing them under "config_devel"|
+|drush|config-devel-import-one | cdi1, cd-i1 | Write back configuration to module"s config/install directory. List which configuration settings you want to export in the module"s info file by listing them under "config_devel"|
 
  - [config_sync](https://www.drupal.org/project/config_sync)
  TBD, see [Add Drush support to Configuration Synchronizer](https://www.drupal.org/node/2445463)

@@ -1,6 +1,7 @@
 ## Developer notes and best practices
 ---------------------------------------
-Please read all the file and not individual sections. It was written like this for purpose.
+
+How to develop stuff guides. Please read all the file and not individual sections. It was written like this for purpose.
 
 A lot of ideas for this page have been taken from the [KIT Feature Specification](http://cgit.drupalcode.org/kit/tree/kitf.txt?id=refs/heads;id2=master).
 

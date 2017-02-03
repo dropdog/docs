@@ -4,9 +4,9 @@ Information about the system that runs the Distribution with the associated soft
 
 [Drupal 8 requirements](https://www.drupal.org/requirements)
 
-- php: 5.6.14
+- php: 5.6+
 - server: Nginx
-- database: MariaDB 10.1.10
+- database: MariaDB 10+
 - PHP OPcode caching: Yes
 - drupal: 8.x
 - PHP ```memory_limit: 256M```

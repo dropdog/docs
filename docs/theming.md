@@ -1,8 +1,6 @@
 ## Theming and Styling
 --------------------------
 
-Please read all the file and not individual sections. It was written like this for purpose.
-
 The basic intention of the theme is to provide a **minimal design** with **great UX**.
 
 We follow the **desktop first** design. That means that we design for desktop but with mobile in mind and not the opposite.
@@ -18,6 +16,8 @@ Here are some examples of the Atomic design in terms of Drupal. Do not confuse t
 - Pages: the styleguide, a test page (for styling)
 
 The above order should be also used to achieve the cascading of the styles. For more examples please see the [atomic design demo](http://demo.patternlab.io/).
+
+Please read all the file and not individual sections. It was written like this for purpose.
 
 ### Static content elements
 

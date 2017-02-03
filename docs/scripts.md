@@ -1,7 +1,7 @@
 ## Custom development scripts
 ------------------------------
 
-Currently none of the scripts bellow has been published. TBD.
+Currently none of the scripts bellow has been published (TBD).
 
 
 ### Create a dev project folder from Drupal.org core and Github distro.

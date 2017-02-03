@@ -1,6 +1,8 @@
 ## Terminology and Abbreviations
 ----------------------------------
 
+(Descriptions are TBD)
+
 - Core (Drupal core)
 - Distribution (Distro)
 - Install profile (Profile)

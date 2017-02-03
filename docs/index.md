@@ -2,7 +2,7 @@
 
 [![Documentation Status](https://readthedocs.org/projects/dropdog/badge/?version=master)](http://dropdog.readthedocs.io/?badge=master)
 
-A useful manual for Drupal developers, themers and site builders that want to start collaboration work with the new Drupal 8.x staff.
+A useful manual for Drupal developers, themers and site builders that want to start collaboration work with the new Drupal 8.x stuff.
 
 The initial documentation created to help us in the maintenance and development of a complex
 Drupal 8.x distribution but became more generic and public available in the future.
@@ -17,7 +17,7 @@ You can use these Docs for your own purpose under [Open Publication License](htt
 - Owner and maintainer: [Hostdog.eu](https://www.hostdog.eu "Web hosting company")
 - Docs on Readthedocs: [readthedocs.org/projects/dropdog](https://readthedocs.org/projects/dropdog/)
 - Docs on Github: [github.com/dropdog/docs](https://github.com/dropdog/docs)
-- Issues: [github.com/dropdog/docs](https://github.com/dropdog/docs/issues)
+- Issues: [github.com/dropdog/docs/issues](https://github.com/dropdog/docs/issues)
 
 ## Table of Contents
 
@@ -36,7 +36,7 @@ You can use these Docs for your own purpose under [Open Publication License](htt
 ## Documentation License
 
 ```
-Copyright (c) 2016 by Hostdog.eu.
+Copyright (c) 2016 - 2017 by Hostdog.eu.
 
 This material may be distributed only subject to the terms and conditions set
 forth in the Open Publication License, v1.0 or later (the latest version
