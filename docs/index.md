@@ -19,6 +19,12 @@ You can use these Docs for your own purpose under [Open Publication License](htt
 - Docs on Github: [github.com/dropdog/docs](https://github.com/dropdog/docs)
 - Issues: [github.com/dropdog/docs/issues](https://github.com/dropdog/docs/issues)
 
+## Similar projects
+
+- [KIT Feature Specification](http://cgit.drupalcode.org/kit/tree/kitf.txt?id=refs/heads;id2=master)
+- [drupalorganised book](https://www.drupalorganised.com/content)
+- [D.O. official Docs](https://www.drupal.org/docs/8)
+
 ## Table of Contents
 
 - [Learn](learn)
