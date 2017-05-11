@@ -31,6 +31,7 @@ that locks the dependencies of a project to a known state (specific versions).
 Composer can install libraries from [Packagist - The PHP Package Repository](https://packagist.org/)
 as also as any other package hub that supports composer.
 
+  - See [Common Problems and Solutions with Drupal + Composer](https://www.jeffgeerling.com/node/2769)
   - Learn more about composer commands [online](https://github.com/composer/composer/blob/master/doc/03-cli.md) or by running:
 
 ```
