@@ -66,13 +66,23 @@ composer dump-autoload
 composer create-project
 
 // Validate a composer json
-composer Validate
+composer validate
 
 // Show the installed packages
 composer show --installed
 
 // Show details about a package
 composer show doctrine/annotations
+
+// Check that there is a newer version available
+composer show -a "drupal/core"
+
+// Check why composer won't install something
+composer why-not "drupal/core:8.3.6"
+
+// Check if we have a version of 'php/reflection' in our lock file that is too high for another package
+composer why "php/reflection"
+
 ```
 
   - Example of adding requirements of the [address](https://www.drupal.org/project/address) module:
