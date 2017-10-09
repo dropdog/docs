@@ -16,7 +16,7 @@ Suggested Drupal 8.x books for advanced developers.
  - [Enterprise Drupal 8 Development](http://www.apress.com/gp/book/9781484202548)
  - [Drupal 8 Development Cookbook](https://www.packtpub.com/web-development/drupal-8-development-cookbook)
  - [Drupal 8 Blueprints](https://www.packtpub.com/web-development/drupal-8-blueprints)
- - [Programmer"s Guide to Drupal, 2nd Edition](http://shop.oreilly.com/product/0636920034612.do)
+ - [Programmer's Guide to Drupal, 2nd Edition](http://shop.oreilly.com/product/0636920034612.do)
  - [High Performance Drupal](http://shop.oreilly.com/product/0636920012269.do)
  - [Drupal Watchdog magazine](https://drupalwatchdog.com/)
 
