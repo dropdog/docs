@@ -149,6 +149,7 @@ Use this distro: [drupal.org/project/multilingual_demo](https://www.drupal.org/p
  - [training.github.com, github-git-cheat-sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
  - [git-tower, git-cheat-sheet](https://www.git-tower.com/blog/git-cheat-sheet/)
  - [Advanced git cheat-sheet](http://www.cheat-sheets.org/saved-copy/git-cheat-sheet.pdf)
+ - [Flight rules for git](https://github.com/k88hudson/git-flight-rules)
 
 #### Interactive tools to learn git commands and terminology:
 
