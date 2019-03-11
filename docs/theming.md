@@ -87,9 +87,8 @@ In case of Drupal some common **Static pages** are:
 - 404 page (not found)
 - 403 page (access denied)
 - Maintenance page
-
-- ```node/add/*```, ```node/*/edit``` pages (forms)
-- ```node/*/preview```
+- `node/add/*`, `node/*/edit` pages (forms)
+- `node/*/preview`
 
 ### (Frontend) Dynamic pages
 
