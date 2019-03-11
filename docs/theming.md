@@ -110,8 +110,15 @@ In case of Drupal some common **Static pages** are:
 - Settings pages (eg System settings)
 
 ### Media queries (table)
+Names are not representative with real device types.
 
-TBD (Responsive breakpoints, Other browser options)
+| Name | Breakpoints |
+| --- | --- |
+| Tiny | 0 - 340px |
+| Mobile | 341px - 768px |
+| Tablet | 769px - 1024px |
+| Desktop | 1025px - 1600px |
+| Wide | 1601px+ |
 
 ### Form design and best practices
 
